@@ -18475,6 +18475,21 @@ padding-bottom: 5px;
 
 }
 
+.card_lrg_btn:hover{
+  display: block; /* Makes the button a block element */
+  width: 100%; /* Full width of the parent */
+  text-align: center; /* Centers text inside the button */
+  padding: 10px; /* Adjust padding for better appearance */
+  background-color: #D69ADE; /* Example background color */
+  color: white; /* Text color */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Removes underline from links */
+  font-weight: bold;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+}
+
 .card_time{
   margin-top: 10px;
 }
