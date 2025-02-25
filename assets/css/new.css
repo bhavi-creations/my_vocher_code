@@ -2274,6 +2274,38 @@ color: #14518a;
 
 
 
-.terms-content p{
-  
+.OfferContainer_exclusive__xtwZ9{
+  background: linear-gradient(90deg, #e3af19, #ffcb36);
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border-radius: 5px;
+
+ }
+
+ .OfferContainer_exclusive__discount{
+  background: linear-gradient(90deg, #B2A5FF, #DAD2FF);
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border-radius: 5px;
+
+ }
+
+ .OfferContainer_exclusive__non{
+  /* background: linear-gradient(90deg, #B2A5FF, #DAD2FF); */
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border-radius: 5px;
+
+ }
+
+ .Offer_exclusiveTitle__TxtkT {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  padding: 15px 0 0 20px;
+  color: #fff;
+  font-weight: 700;
+  /* font-size: 13px; */
 }
