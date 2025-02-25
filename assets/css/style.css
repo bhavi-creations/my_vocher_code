@@ -4338,6 +4338,9 @@ textarea.form-control.is-invalid {
 .main-menu .mega-menu-wrap {
   position: static;
 }
+
+
+@media (max-width:1200px) {
 .main-menu ul.mega-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4352,7 +4355,27 @@ textarea.form-control.is-invalid {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}  
+}  
+@media (min-width:1200px) {
+  
+.main-menu ul.mega-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: left;
+  width: 150%;
+  max-width: 1500px;
+  padding: 20px 15px 23px 15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
+}
+
 .main-menu ul.mega-menu li {
   display: block;
   width: 100%;
