@@ -64,7 +64,7 @@
 ==================================*/
 /*------------------- 1.1. Variable-------------------*/
 :root {
-  --theme-color: #07ccec;
+  --theme-color: #7D1C4A;
   --theme-color2: #2cb624;
   --theme-color3: #27477d;
   --theme-color4: #07ccec;
@@ -1136,7 +1136,7 @@ textarea.form-control.is-invalid {
 
 .vs-mobile-menu {
   overflow-y: scroll;
-  max-height: 58vh;
+  max-height: 66vh;
   padding-bottom: 40px;
   margin-top: 33px;
   text-align: left;
@@ -4343,14 +4343,14 @@ textarea.form-control.is-invalid {
           justify-content: space-between;
   text-align: left;
   width: 100%;
-  max-width: 1250px;
+  max-width: 1200px;
   padding: 20px 15px 23px 15px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }  
 }  
-@media (min-width:1200px) {
+@media (min-width:1200px) and (max-width:1300px) {
   
 .main-menu ul.mega-menu {
   display: -webkit-box;
@@ -4361,14 +4361,49 @@ textarea.form-control.is-invalid {
           justify-content: space-between;
   text-align: left;
   width: 150%;
-  max-width: 1500px;
+  max-width: 1200px;
   padding: 20px 15px 23px 15px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
 }
-
+@media (min-width:1300px) and (max-width:1400px) {
+  
+  .main-menu ul.mega-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: left;
+    width: 150%;
+    max-width: 1300px;
+    padding: 20px 15px 23px 15px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  }
+  @media (min-width:1400px)   {
+  
+    .main-menu ul.mega-menu {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      text-align: left;
+      width: 150%;
+      max-width: 1400px;
+      padding: 20px 15px 23px 15px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+    }
+    }
 .main-menu ul.mega-menu li {
   display: block;
   width: 100%;
@@ -18398,10 +18433,19 @@ body {
 
 
 .sub_heading{
-  font-size:24px !important;
-  border-bottom: #27477D   solid !important;
+  font-size: 24px !important;
+  border: #00000021 1px solid !important;
   margin-bottom: 8px;
   color: #ff226e !important;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #efefef63;
+  font-weight: 800;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
 }
 
 
