@@ -1220,17 +1220,48 @@ textarea.form-control.is-invalid {
 .vs-mobile-menu > ul > li:last-child {
   border-bottom: none;
 }
+@media (min-width:992px) {
+  
+  .mobile-menu-form {
+    width: 100%;
+    max-width: 330px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+  }
 
-.mobile-menu-form {
-  width: 100%;
-  max-width: 230px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  position: relative;
+  .mobile-menu-form button {
+    border: none;
+    background-color: transparent;
+    color: var(--theme-color);
+    position: absolute;
+    right: 13px;
+    top: 5px;
+ 
+  }
+}
+@media (max-width:992px) {
+  
+  .mobile-menu-form {
+    width: 100%;
+    max-width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+  }
+  .mobile-menu-form button {
+    border: none;
+    background-color: transparent;
+    color: var(--theme-color);
+    position: absolute;
+    right: 13px;
+    top: 3px;
+  }
 }
 .mobile-menu-form input {
-  height: 35px;
+  height: 40px;
   border: none;
   background-color: var(--white-color);
   border-radius: 5px;
@@ -1263,14 +1294,7 @@ textarea.form-control.is-invalid {
   color: var(--smoke-color);
   color: var(--theme-color);
 }
-.mobile-menu-form button {
-  border: none;
-  background-color: transparent;
-  color: var(--theme-color);
-  position: absolute;
-  right: 13px;
-  top: 3px;
-}
+
 
 .vs-menu-toggle {
   width: 50px;
@@ -4188,6 +4212,13 @@ textarea.form-control.is-invalid {
   font-size: 18px;
   /* Large devices */
 }
+.main-menu a:hover {
+ 
+  color: #00FFFF		 !important;
+ 
+  /* Large devices */
+}
+
 @media (max-width: 1199px) {
   .main-menu a {
     font-size: 14px;
@@ -18449,9 +18480,24 @@ body {
 }
 
 
+
+.sub_heading:hover{
+ 
+  color: #D69ADE !important;
+  
+}
 .sub_mini_serices{
   font-size: 18px !important;
   color: #4268a8  !important ;
+}
+.view_all_sub_mini_serices {
+  font-size: 18px !important;
+  color: #5b5555  !important ;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.view_all_sub_mini_serices:hover{
+  color: #000000  !important ;
 }
 .sub_mini_serices:hover{
  

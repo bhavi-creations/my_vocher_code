@@ -2275,3 +2275,14 @@ font-weight: 700;
   
   }
   
+
+
+ 
+  .movies-bg {
+    background-image: url('assets/img/self_images/profile (1).png'); /* Replace with your actual image path */
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents image repetition */
+    color: #fff; /* Optional - change text color if needed for contrast */
+    padding: 15px; /* Optional - add padding so content doesn't stick to edges */
+}
