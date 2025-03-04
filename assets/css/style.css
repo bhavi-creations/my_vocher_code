@@ -18496,11 +18496,21 @@ body {
    
   
 }
-.sub_mini_serices{
+/* @media (max-width:992px) {
+  .sub_mini_serices{
+  font-size: 18px !important;
+  color: #a80050  !important ;
+  letter-spacing: 0.9px;
+}
+} */
+/* @media (min-width:992px) { */
+  .sub_mini_serices{
   font-size: 18px !important;
   color: #ffffff  !important ;
   letter-spacing: 0.9px;
 }
+/* } */
+
 
 .view_all_sub_mini_serices {
   font-size: 18px !important;

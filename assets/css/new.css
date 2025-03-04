@@ -2182,11 +2182,57 @@ margin-bottom: 5px;
 color: #14518a;
 }
 
-.yellow_fields_div_li{
-  margin-bottom: 50px;
+.yellow_fields_div_li > * {
+  /* margin-bottom: 50px; */
+  position: relative;
+  z-index: 1;
+ 
+
+}
+
+.yellow_fields_cards_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* Consistent gap */
+  justify-content: space-between;
+}
+
+/* Default for desktop - 4 cards per row */
+.yellow_field_card {
+  width: calc((25% - 15px)); /* 4 in a row with 15px gap */
+  background-color: yellow;
+  text-align: left;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  list-style: none !important;
 }
 
 
+.yellow_field_card  > * {
+  position: relative;
+  z-index: 1;
+  list-style: none;
+}
+
+.yellow_field_card ul li a:hover {
+  color: #07ccec !important;
+}
+/* Tablets - 2 cards per row */
+@media (max-width: 768px) {
+  .yellow_field_card {
+      width: calc(50% - 7.5px); /* 2 cards per row */
+  }
+}
+
+/* Mobile - 1 card per row */
+@media (max-width: 480px) {
+  .yellow_field_card {
+      width: 100%; /* Full width for mobile */
+  }
+}
 
 
 .OfferContainer_exclusive__xtwZ9{
@@ -2328,6 +2374,7 @@ font-weight: 700;
 }
 
 
+
 .saloon_bg {
   background-image: url('/assets/img/self_images/spa.jpg');
   background-size: cover;
@@ -2459,4 +2506,37 @@ font-weight: 700;
   top: 0; left: 0; right: 0; bottom: 0;
   background: rgba(0, 0, 0, 0.292);
   z-index: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+.sub-menu li a{
+color: white !important;
+font-weight: bold;
+}
+
+
+.list_page_test_tittle{
+  position: absolute;
+
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+
+  z-index: 2; 
+  width:100%;
+
+
+
 }
