@@ -481,6 +481,64 @@
     </header>
     
    
+    <div id="overlay" class="overlay"></div>
+    <button id="restaurant-icon" class="restaurant-icon">🍽</button>
+    <div id="sidebar" class="sidebar side_view">
+        <h1 class="side_bar_tittle">Restaurants 🍽</h1>
+        <ul id="restaurant-list" class="restaurant-list"></ul>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const restaurantIcon = document.getElementById("restaurant-icon");
+            const sidebar = document.getElementById("sidebar");
+            const overlay = document.getElementById("overlay");
+            
+            function openSidebar() {
+                sidebar.classList.add("open");
+                overlay.classList.add("active");
+            }
+            
+            function closeSidebar() {
+                sidebar.classList.remove("open");
+                overlay.classList.remove("active");
+            }
+            
+            restaurantIcon.addEventListener("click", openSidebar);
+            overlay.addEventListener("click", closeSidebar);
+        });
+
+        const restaurants = [
+            { name: "Dominos", link: "./test.html" },
+            { name: "PizzaHut", link: "./test.html" },
+            { name: "KFC", link: "./test.html" },
+            { name: "MC donald's", link: "./test.html" },
+        ];
+
+        const restaurantList = document.getElementById("restaurant-list");
+        restaurants.forEach((restaurant) => {
+            const listItem = document.createElement("li");
+            const link = document.createElement("a");
+            link.href = restaurant.link;
+            // link.target = "_blank";
+            link.rel = "noopener noreferrer";
+            link.textContent = restaurant.name;
+            
+            listItem.appendChild(link);
+            restaurantList.appendChild(listItem);
+        });
+    </script>
+
+
+
+<section>
+    <div class="container">
+        <div class="row">
+            <img src="assets/img/self_images/top_add.png" class="img-fluid "   alt="">
+        </div>
+    </div>
+</section>
+
+
 
 
 
@@ -493,7 +551,7 @@
                 <h5> Experience Luxury Dining at The Royal Feast</h5>
             </div>
             <div class="row">
-                <div class="col-md-9 col-12">
+                <div class="col-lg-9 col-12">
                     <div class="row">
                         <div class="col-md-8 col-12">
 
@@ -515,11 +573,7 @@
                                 </div>
                             </div>
 
-                            <!-- <div class="custom-slider">
-                                <img src="assets/img/test/2.png" alt="Slide 1" class="custom-slide active">
-                                <img src="assets/img/test/3.png" alt="Slide 2" class="custom-slide">
-                                <img src="assets/img/test/1.png" alt="Slide 3" class="custom-slide">
-                            </div> -->
+                             
                         </div>
                         <div class="col-md-4 col-12 p-3">
                             <div class="product-content">
@@ -727,23 +781,40 @@
 
                     </div>
                 </div>
-                <div class="col-md-3 col-12 text_side_div">
-
-
-                    <div class="">
-                        <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid">
-                    </div>
+                <div class="col-lg-3  col-12 text_side_div d-none d-lg-block">
+              
+                    <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid">
+                   
                     <img src="assets/img/test/animation.gif" alt="Animated GIF" class="mt-5">
 
-
-                    <!-- <video autoplay loop muted playsinline width="500">
-                        <source src="assets/img/test/animation.gif" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video> -->
-
-
-                    <img src="assets/img/test/sideimg1.png" alt="" class="img-fluid mt-5">
+                     <img src="assets/img/test/sideimg1.png" alt="" class="img-fluid mt-5">
                 </div>
+
+                <div id="mobileModal" class="mobile-modal-overlay">
+                    <div class="mobile-modal-content">
+                        <button class="close-btn" onclick="closeMobileModal()">×</button>
+                        <div class="col-12 text_side_div">
+                            <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid">
+                            <img src="assets/img/test/animation.gif" alt="Animated GIF" class="mt-5">
+                            <img src="assets/img/test/sideimg1.png" alt="" class="img-fluid mt-5">
+                        </div>
+                    </div>
+                </div>
+
+                    <script>
+                        function closeMobileModal() {
+                            document.getElementById("mobileModal").style.display = "none";
+                        }
+
+                        document.addEventListener("DOMContentLoaded", function() {
+                            if (window.innerWidth <= 991) {
+                                document.getElementById("mobileModal").style.display = "flex";
+                            }
+                        });
+
+                    </script>
+                
+                
 
             </div>
 
@@ -751,6 +822,18 @@
     </section>
 
 
+
+
+
+
+    
+    <section>
+        <div class="container">
+            <div class="row">
+                <img src="assets/img/self_images/last_add.png" class="img-fluid "   alt="">
+            </div>
+        </div>
+    </section>
 
     <script>
         let currentSlide = 0;
@@ -800,49 +883,11 @@
 
 
 
-    <script>
-        let index = 0;
-        function autoSlide() {
-            const slider = document.querySelector('.custom-slider');
-            const totalSlides = document.querySelectorAll('.custom-slide').length;
-            index = (index + 1) % totalSlides;
-            slider.style.transform = `translateX(${-index * 100}%)`;
-        }
-        setInterval(autoSlide, 3000); // Auto-slide every 3 seconds
-    </script>
-
+    
 
 
     <!-- JavaScript to Handle Modal Opening and Content Injection -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const buttons = document.querySelectorAll('.open-get-code');
-
-            buttons.forEach(button => {
-                button.addEventListener('click', function (e) {
-                    e.preventDefault();
-
-                    const code = button.getAttribute('data-code');
-                    const description = button.getAttribute('data-description');
-
-                    const modalBody = document.getElementById('getCodeModalBody');
-                    modalBody.innerHTML = `<p>${description}</p><h3 style="background: #f8f9fa; padding: 10px; border: 1px solid #ddd;">${code}</h3>`;
-
-                    const getCodeModal = new bootstrap.Modal(document.getElementById('getCodeModal'));
-                    getCodeModal.show();
-                });
-            });
-
-            // Optional: Toggle Terms & Conditions Logic
-            document.querySelectorAll('.toggle-terms').forEach(function (link) {
-                link.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const termsContent = this.closest('.terms_cond_styles').querySelector('.terms-content');
-                    termsContent.style.display = termsContent.style.display === 'none' ? 'block' : 'none';
-                });
-            });
-        });
-    </script>
+    
 
     <!-- <footer class="footer-wrapper footer-layout1" data-bg-src="assets/img/bg/bg-shape-4.png">
         <div class="container">
