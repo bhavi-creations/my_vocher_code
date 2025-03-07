@@ -2325,7 +2325,7 @@ font-weight: 700;
 
  
   .movies_bg {
-    background-image: url('/assets/img/self_images/theater.jpg');
+    background-image: url('../img/self_images/theater.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -2354,7 +2354,7 @@ font-weight: 700;
 
 
 .resturent_bg {
-  background-image: url('/assets/img/self_images/resturent.jpg');
+  background-image: url('../img/self_images/resturent.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2376,7 +2376,7 @@ font-weight: 700;
 
 
 .saloon_bg {
-  background-image: url('/assets/img/self_images/spa.jpg');
+  background-image: url('../img/self_images/spa.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2398,7 +2398,7 @@ font-weight: 700;
 
  
 .gifts_bg {
-  background-image: url('/assets/img/self_images/gifts.jpg');
+  background-image: url('../img/self_images/gifts.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2420,7 +2420,7 @@ font-weight: 700;
  
 
 .fashion_bg {
-  background-image: url('/assets/img/self_images/fashion.webp');
+  background-image: url('../img/self_images/fashion.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2443,7 +2443,7 @@ font-weight: 700;
 
 
 .hospital_bg {
-  background-image: url('/assets/img/self_images/hospitals.jpg');
+  background-image: url('../img/self_images/hospitals.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2465,7 +2465,7 @@ font-weight: 700;
 
 
 .sports_bg {
-  background-image: url('/assets/img/self_images/sports.jpg');
+  background-image: url('../img/self_images/sports.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2488,7 +2488,7 @@ font-weight: 700;
 
 
 .kids_bg {
-  background-image: url('/assets/img/self_images/kids.jpg');
+  background-image: url('../img/self_images/kids.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2650,18 +2650,17 @@ font-weight: bold;
 
 
 
-
 .mobile-modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6); /* Dark overlay */
-  display: none; /* Hidden by default */
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
   align-items: center;
   justify-content: center;
-  z-index: 999999;
+  z-index: 99999;
 }
 
 .mobile-modal-content {
@@ -2685,16 +2684,54 @@ font-weight: bold;
   cursor: pointer;
 }
 
-/* Only show this modal on small screens */
-@media (max-width: 991px) {
-  .mobile-modal-overlay {
-      display: flex;
-  }
+/* Ensure images show properly */
+.mobile-modal-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
 }
 
-/* Hide the original div on mobile (because it’s inside modal now) */
-@media (max-width: 991px) {
-  .text_side_div {
-      display: none;
-  }
+/* Force show text_side_div inside modal even if sidebar hides it */
+.mobile-modal-content .text_side_div {
+  display: block !important;
+}
+
+
+
+
+.property_strong{
+  font-weight: bold;
+  color: black;
+}
+
+.property_p_tag{
+  color: black;
+}
+
+
+
+
+
+
+.image-gallery {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f9f9f9;
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.thumbnail-gallery img {
+  cursor: pointer;
+  object-fit: cover;
+  height: 60px;
+  width: 100%;
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.thumbnail-gallery img.active-thumb {
+  border-color: #007bff;
 }
