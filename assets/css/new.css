@@ -2735,3 +2735,203 @@ font-weight: bold;
 .thumbnail-gallery img.active-thumb {
   border-color: #007bff;
 }
+
+.sale_tag {
+  background-color: rgb(212, 212, 2);
+  border: none;
+  display: inline-block; /* Makes the background fit text width */
+  padding: 2px 10px; /* Adjust padding as needed */
+  border-radius: 4px; /* Optional for rounded edges */
+  color: white;
+  font-weight: bold;
+}
+
+
+.rent_tag {
+  background-color: rgb(255, 0, 0);
+  border: none;
+  display: inline-block; /* Makes the background fit text width */
+  padding: 2px 10px; /* Adjust padding as needed */
+  border-radius: 4px; /* Optional for rounded edges */
+  color: white;
+  font-weight: bold;
+}
+
+.lease_tag {
+  background-color: rgb(0, 135, 4);
+  border: none;
+  display: inline-block; /* Makes the background fit text width */
+  padding: 2px 10px; /* Adjust padding as needed */
+  border-radius: 4px; /* Optional for rounded edges */
+  color: white;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Styling the bottom ad container */
+    .sticky-bottom-ad {
+      position: fixed;
+      bottom: 0;
+      /* Stick to the bottom */
+      left: 0;
+      width: 100%;
+      /* Full width */
+      background: rgba(0, 0, 0, 0.395);
+      /* Slightly transparent */
+      padding: 10px 0;
+      box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.2);
+      /* Shadow at the top */
+      text-align: center;
+      z-index: 9999;
+      /* Stay above everything */
+  }
+
+  /* Ensure the image is centered and responsive */
+  .sticky-bottom-ad img {
+      max-width: 100%;
+      height: auto;
+  }
+
+  /* Close button styles */
+  .close-bottom-ad {
+      position: absolute;
+      background: rgb(205, 205, 205);
+      color: rgb(0, 0, 0);
+      border: none;
+      padding: 2px 10px;
+      cursor: pointer;
+      border-radius: 50%;
+  }
+  @media (max-width:992px) {
+    .close-bottom-ad {
+      position: absolute;
+      top: 1px;
+      right: 1px;
+      font-size: 16px;
+ 
+  }
+  }
+  @media (min-width:992px) {
+    .close-bottom-ad {
+      position: absolute;
+      top: 5px;
+      right: 15px;
+      font-size: 16px;
+ 
+  }
+  }
+  /* Hover effect for close button */
+  .close-bottom-ad:hover {
+      background: rgb(0, 139, 137);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  .sticky-ad {
+    position: absolute;
+    /* Initially scrolls with the page */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    /* Higher than navbar */
+    background: rgba(0, 0, 0, 0.395);
+    /* Light background */
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    /* Centers the image */
+    align-items: center;
+}
+
+/* Sticky effect when reaching the top */
+.sticky-ad.fixed {
+    position: fixed;
+    top: 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure image is centered and responsive */
+.sticky-ad img {
+    max-width: 100%;
+    /* Makes sure it doesn't overflow */
+    height: auto;
+    display: block;
+}
+
+/* Close button styles */
+.close-ad {
+    position: absolute;
+   
+    background: rgb(205, 205, 205);
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+/* Hover effect on close button */
+.close-ad:hover {
+  background: rgb(0, 139, 137);
+}
+
+
+
+@media (max-width:992px) {
+  .close-ad {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    font-size: 9px;
+    padding: 0px 9px;
+
+}
+}
+@media (min-width:992px) {
+  .close-ad {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 16px;
+    padding: 6px 12px;
+
+}
+}

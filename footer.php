@@ -1,5 +1,31 @@
+<section id="bottomAdBanner" class="sticky-bottom-ad">
+    <button class="close-bottom-ad" onclick="closeBottomAd()">X</button>
+    <div class="container">
+        <div class="row">
+            <img src="assets/img/self_images/last_add.png" class="img-fluid" alt="Bottom Ad Banner">
+        </div>
+    </div>
+
+    <script>
+        function closeBottomAd() {
+            document.getElementById("bottomAdBanner").style.display = "none";
+        }
+    </script>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
 <footer class="bg-dark p-5">
-        <h3 class="text-center text-white">My<span class="">Voucher  </span>Codes</h3>
+    <h3 class="text-center text-white">My<span class="">Voucher </span>Codes</h3>
     <div class=" text-center side ">
         <ul class="foot ">
             <a href="">ABOUT US</a>
@@ -11,9 +37,9 @@
     </div>
     <p class="text-center text-white">MyVoucherCodes is part of Future plc, an international media group and leading digital publisher. Visit our corporate site.</p>
     <p class="text-center text-white">© Future Publishing Limited Quay House, The Ambury, Bath BA1 1UA. All rights reserved. England and Wales company registration number 2008885.</p>
-    </footer>
+</footer>
 
-    <!-- <section class="d-flex justify-content-center">
+<!-- <section class="d-flex justify-content-center">
         <div class="container text-center">
             <div class="row justify-content-center">
                 <div class="col-md-4">
@@ -50,7 +76,7 @@
 
 
 
-    <!-- <footer class="footer-wrapper footer-layout1" data-bg-src="assets/img/bg/bg-shape-4.png">
+<!-- <footer class="footer-wrapper footer-layout1" data-bg-src="assets/img/bg/bg-shape-4.png">
         <div class="container">
             <div class="footer-top">
                 <div class="row align-items-center justify-content-between">
@@ -180,47 +206,47 @@
 
 
 
-    <!--********************************
+<!--********************************
 			Code End  Here 
 	******************************** -->
 
 
-    <!-- Scroll To Top -->
-    <a href="#" class="scrollToTop scroll-bottom  style2"><i class="fas fa-arrow-alt-up"></i></a>
+<!-- Scroll To Top -->
+<a href="#" class="scrollToTop scroll-bottom  style2"><i class="fas fa-arrow-alt-up"></i></a>
 
 
 
-    <!--==============================
+<!--==============================
         All Js File
     ============================== -->
-    <!-- Jquery -->
-    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
-    <!-- Slick Slider -->
-    <script src="assets/js/slick.min.js"></script>
-    <!-- <script src="assets/js/app.min.js"></script> -->
-    <!-- Layerslider -->
-    <script src="assets/js/layerslider.utils.js"></script>
-    <script src="assets/js/layerslider.transitions.js"></script>
-    <script src="assets/js/layerslider.kreaturamedia.jquery.js"></script>
-    <!-- Bootstrap -->
-    <script src="assets/js/bootstrap.min.js"></script>
-    <!-- jQuery Datepicker -->
-    <script src="assets/js/jquery.datetimepicker.min.js"></script>
-    <!-- Magnific Popup -->
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <!-- Isotope Filter -->
-    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/js/isotope.pkgd.min.js"></script>
-    <!-- Parallax Scroll -->
-    <script src="assets/js/universal-parallax.min.js"></script>
-    <!-- WOW Animation -->
-    <script src="assets/js/wow.min.js"></script>
-    <!-- Custom Carousel -->
-    <script src="assets/js/vscustom-carousel.min.js"></script>
-    <!-- Form Js -->
-    <script src="assets/js/ajax-mail.js"></script>
-    <!-- Main Js File -->
-    <script src="assets/js/main.js"></script>
+<!-- Jquery -->
+<script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+<!-- Slick Slider -->
+<script src="assets/js/slick.min.js"></script>
+<!-- <script src="assets/js/app.min.js"></script> -->
+<!-- Layerslider -->
+<script src="assets/js/layerslider.utils.js"></script>
+<script src="assets/js/layerslider.transitions.js"></script>
+<script src="assets/js/layerslider.kreaturamedia.jquery.js"></script>
+<!-- Bootstrap -->
+<script src="assets/js/bootstrap.min.js"></script>
+<!-- jQuery Datepicker -->
+<script src="assets/js/jquery.datetimepicker.min.js"></script>
+<!-- Magnific Popup -->
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<!-- Isotope Filter -->
+<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<!-- Parallax Scroll -->
+<script src="assets/js/universal-parallax.min.js"></script>
+<!-- WOW Animation -->
+<script src="assets/js/wow.min.js"></script>
+<!-- Custom Carousel -->
+<script src="assets/js/vscustom-carousel.min.js"></script>
+<!-- Form Js -->
+<script src="assets/js/ajax-mail.js"></script>
+<!-- Main Js File -->
+<script src="assets/js/main.js"></script>
 
 </body>
 

@@ -108,13 +108,7 @@ $result = $stmt->get_result();
 
 
 
-<section>
-    <div class="container">
-        <div class="row">
-            <img src="assets/img/self_images/top_add.png" class="img-fluid " alt="">
-        </div>
-    </div>
-</section>
+ 
 
 
 <div class="container text-center">
@@ -395,13 +389,7 @@ $result = $stmt->get_result();
 
 
 
-<section>
-    <div class="container">
-        <div class="row">
-            <img src="assets/img/self_images/last_add.png" class="img-fluid " alt="">
-        </div>
-    </div>
-</section>
+ 
 
 <script>
     let currentSlide = 0;

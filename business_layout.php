@@ -51,13 +51,7 @@
 
 
 
-<section>
-    <div class="container">
-        <div class="row">
-            <img src="assets/img/self_images/top_add.png" class="img-fluid "   alt="">
-        </div>
-    </div>
-</section>
+ 
 
 
 
@@ -349,13 +343,7 @@
 
 
     
-    <section>
-        <div class="container">
-            <div class="row">
-                <img src="assets/img/self_images/last_add.png" class="img-fluid "   alt="">
-            </div>
-        </div>
-    </section>
+ 
 
     <script>
         let currentSlide = 0;

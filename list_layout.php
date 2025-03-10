@@ -1,17 +1,134 @@
 <?php include 'navbar.php';  ?>
-     
- 
- 
-  
+
+
+
+
 <h1 class="text-center my-3">Movie Theaters</h1>
 
 
 <section class="py-5 ">
     <div class="container">
         <div class="row g-4">
+        
+
+
+            <div class="col-6 col-md-3">
+            <a href="cc.php">
+
+                <div class="card bg-dark text-white shadow-lg  d-flex flex-column align-items-center"
+                    style="height: 220px;">
+                    <img src="assets/img/self_images/cc.jpg" alt="Offer Image" class="img-fluid pic"
+                        style="width: 100%; height: 220px; object-fit: cover;">
+                    <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">C & C</h3>
+                </div>
+                </a>
+
+            </div>
+
             <!-- Card 1 -->
             <div class="col-6 col-md-3">
-                 <a href="business_layout.php">
+                <a href="sripadma.php">
+                    <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
+                        style="height: 220px;">
+                        <img src="assets/img/self_images/padmapriya.avif" alt="Offer Image" class="img-fluid pic"
+                            style="width: 100%; height: 220px; object-fit: cover;">
+                        <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Padma Priya</h3>
+                    </div>
+                </a>
+            </div>
+
+
+
+            <!-- Card 1 -->
+            <div class="col-6 col-md-3">
+                <a href="anand.php">
+                    <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
+                        style="height: 220px;">
+                        <img src="assets/img/self_images/anand.jpg" alt="Offer Image" class="img-fluid pic"
+                            style="width: 100%; height: 220px; object-fit: cover;">
+                        <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Anand Complex</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <a href="geeth_sangeeth.php">
+                    <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
+                        style="height: 220px;">
+                        <img src="assets/img/self_images/geet_sangeet.jpg" alt="Offer Image" class="img-fluid pic"
+                            style="width: 100%; height: 220px; object-fit: cover;">
+                        <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">   Geeth Sangeeth</h3>
+                    </div>
+                </a>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-6 col-md-3">
+                <a href="tirumala.php">
+
+                    <div class="card bg-dark text-white shadow-lg  d-flex flex-column align-items-center"
+                        style="height: 220px;">
+                        <img src="assets/img/self_images/tirumala.jpeg" alt="Offer Image" class="img-fluid pic"
+                            style="width: 100%; height: 220px; object-fit: cover;">
+                        <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Thirumala</h3>
+                    </div>
+                </a>
+
+            </div>
+
+            <!-- Card 1 -->
+            <div class="col-6 col-md-3">
+                <a href="inox.php">
+                    <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
+                        style="height: 220px;">
+                        <img src="assets/img/self_images/inox.jpeg" alt="Offer Image" class="img-fluid pic"
+                            style="width: 100%; height: 220px; object-fit: cover;">
+                        <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Inox</h3>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-6 col-md-3">
+                <a href="surya.php">
+
+                    <div class="card bg-dark text-white shadow-lg  d-flex flex-column align-items-center"
+                        style="height: 220px;">
+                        <img src="assets/img/self_images/surya.avif" alt="Offer Image" class="img-fluid pic"
+                            style="width: 100%; height: 220px; object-fit: cover;">
+                        <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Surya</h3>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Card 1 -->
+            <div class="col-6 col-md-3">
+                <a href="satyagowri.php">
+
+                    <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
+                        style="height: 220px;">
+                        <img src="assets/img/self_images/satya goweri.avif" alt="Offer Image" class="img-fluid pic"
+                            style="width: 100%; height: 220px; object-fit: cover;">
+                        <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Satya Gowri</h3>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-6 col-md-3">
+                <a href="mayuri.php">
+                    <div class="card bg-dark text-white shadow-lg  d-flex flex-column align-items-center"
+                        style="height: 220px;">
+                        <img src="assets/img/self_images/mayuri.png" alt="Offer Image" class="img-fluid pic"
+                            style="width: 100%; height: 220px; object-fit: cover;">
+                        <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Mayuri</h3>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Card 1 -->
+            <div class="col-6 col-md-3">
+                <a href="devi.php">
+
                     <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
                         style="height: 220px;">
                         <img src="assets/img/self_images/devi.jpg" alt="Offer Image" class="img-fluid pic"
@@ -21,192 +138,8 @@
                 </a>
             </div>
 
-            <!-- Card 2 -->
-            <div class="col-6 col-md-3">
-                <div class="card bg-dark text-white shadow-lg  d-flex flex-column align-items-center"
-                    style="height: 220px;">
-                    <img src="assets/img/self_images/cc.jpg" alt="Offer Image" class="img-fluid pic"
-                        style="width: 100%; height: 220px; object-fit: cover;">
-                        <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">C & C</h3>
-                    </div>
-            </div>
 
-             <!-- Card 1 -->
-             <div class="col-6 col-md-3">
-                <a href="business_layout.php">
-                    <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
-                       style="height: 220px;">
-                       <img src="assets/img/self_images/devi.jpg" alt="Offer Image" class="img-fluid pic"
-                           style="width: 100%; height: 220px; object-fit: cover;">
-                       <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Sri Priya</h3>
-                   </div>
-               </a>
-           </div>
 
-           <!-- Card 2 -->
-           <div class="col-6 col-md-3">
-            <a href="business_layout.php">
-
-               <div class="card bg-dark text-white shadow-lg  d-flex flex-column align-items-center"
-                   style="height: 220px;">
-                   <img src="assets/img/self_images/cc.jpg" alt="Offer Image" class="img-fluid pic"
-                       style="width: 100%; height: 220px; object-fit: cover;">
-                       <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Padma Priya</h3>
-                   </div>
-               </a>
-
-           </div>
-
-             <!-- Card 1 -->
-             <div class="col-6 col-md-3">
-                <a href="business_layout.php">
-                   <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
-                       style="height: 220px;">
-                       <img src="assets/img/self_images/devi.jpg" alt="Offer Image" class="img-fluid pic"
-                           style="width: 100%; height: 220px; object-fit: cover;">
-                       <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Anand Complex</h3>
-                   </div>
-               </a>
-           </div>
-
-           <!-- Card 2 -->
-           <div class="col-6 col-md-3">
-            <a href="business_layout.php">
-
-               <div class="card bg-dark text-white shadow-lg  d-flex flex-column align-items-center"
-                   style="height: 220px;">
-                   <img src="assets/img/self_images/cc.jpg" alt="Offer Image" class="img-fluid pic"
-                       style="width: 100%; height: 220px; object-fit: cover;">
-                       <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Thirumala</h3>
-                   </div>
-               </a>
-
-           </div>
-
-             <!-- Card 1 -->
-             <div class="col-6 col-md-3">
-                <a href="business_layout.php">
-                   <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
-                       style="height: 220px;">
-                       <img src="assets/img/self_images/devi.jpg" alt="Offer Image" class="img-fluid pic"
-                           style="width: 100%; height: 220px; object-fit: cover;">
-                       <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Inox</h3>
-                   </div>
-               </a>
-           </div>
-
-           <!-- Card 2 -->
-           <div class="col-6 col-md-3">
-            <a href="business_layout.php">
-
-               <div class="card bg-dark text-white shadow-lg  d-flex flex-column align-items-center"
-                   style="height: 220px;">
-                   <img src="assets/img/self_images/cc.jpg" alt="Offer Image" class="img-fluid pic"
-                       style="width: 100%; height: 220px; object-fit: cover;">
-                       <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Surya</h3>
-                   </div>
-               </a>
-            </div>
-
-             <!-- Card 1 -->
-             <div class="col-6 col-md-3">
-                <a href="business_layout.php">
-
-                   <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
-                       style="height: 220px;">
-                       <img src="assets/img/self_images/devi.jpg" alt="Offer Image" class="img-fluid pic"
-                           style="width: 100%; height: 220px; object-fit: cover;">
-                       <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Satya Gowri</h3>
-                   </div>
-               </a>
-           </div>
-
-           <!-- Card 2 -->
-           <div class="col-6 col-md-3">
-            <a href="business_layout.php">
-                <div class="card bg-dark text-white shadow-lg  d-flex flex-column align-items-center"
-                   style="height: 220px;">
-                   <img src="assets/img/self_images/cc.jpg" alt="Offer Image" class="img-fluid pic"
-                       style="width: 100%; height: 220px; object-fit: cover;">
-                       <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Mayuri</h3>
-                   </div>
-               </a>
-            </div>
-
-             <!-- Card 1 -->
-             <div class="col-6 col-md-3">
-                <a href="business_layout.php">
-
-                   <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
-                       style="height: 220px;">
-                       <img src="assets/img/self_images/devi.jpg" alt="Offer Image" class="img-fluid pic"
-                           style="width: 100%; height: 220px; object-fit: cover;">
-                       <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Devi Multiplex</h3>
-                   </div>
-               </a>
-           </div>
-
-           <!-- Card 2 -->
-           <div class="col-6 col-md-3">
-            <a href="business_layout.php">
-                <div class="card bg-dark text-white shadow-lg  d-flex flex-column align-items-center"
-                   style="height: 220px;">
-                   <img src="assets/img/self_images/cc.jpg" alt="Offer Image" class="img-fluid pic"
-                       style="width: 100%; height: 220px; object-fit: cover;">
-                       <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">C & C</h3>
-                   </div>
-               </a>
-            </div>
-
-             <!-- Card 1 -->
-             <div class="col-6 col-md-3">
-                <a href="business_layout.php">
-
-                   <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
-                       style="height: 220px;">
-                       <img src="assets/img/self_images/devi.jpg" alt="Offer Image" class="img-fluid pic"
-                           style="width: 100%; height: 220px; object-fit: cover;">
-                       <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Devi Multiplex</h3>
-                   </div>
-               </a>
-           </div>
-
-           <!-- Card 2 -->
-           <div class="col-6 col-md-3">
-            <a href="business_layout.php">
-                <div class="card bg-dark text-white shadow-lg  d-flex flex-column align-items-center"
-                   style="height: 220px;">
-                   <img src="assets/img/self_images/cc.jpg" alt="Offer Image" class="img-fluid pic"
-                       style="width: 100%; height: 220px; object-fit: cover;">
-                       <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">C & C</h3>
-                   </div>
-               </a>
-            </div>
-
-             <!-- Card 1 -->
-             <div class="col-6 col-md-3">
-                <a href="business_layout.php">
-
-                   <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
-                       style="height: 220px;">
-                       <img src="assets/img/self_images/devi.jpg" alt="Offer Image" class="img-fluid pic"
-                           style="width: 100%; height: 220px; object-fit: cover;">
-                       <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Devi Multiplex</h3>
-                   </div>
-               </a>
-           </div>
-
-           <!-- Card 2 -->
-           <div class="col-6 col-md-3">
-            <a href="business_layout.php">
-                <div class="card bg-dark text-white shadow-lg  d-flex flex-column align-items-center"
-                   style="height: 220px;">
-                   <img src="assets/img/self_images/cc.jpg" alt="Offer Image" class="img-fluid pic"
-                       style="width: 100%; height: 220px; object-fit: cover;">
-                       <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">C & C</h3>
-                   </div>
-               </a>
-            </div>
 
         </div>
     </div>
@@ -221,10 +154,10 @@
 
 
 <section class="team-section-three   space-md-bottom">
-            <div class="title-area-three text-center wow fadeInUp" data-wow-delay="600ms">
-                <span class="sub-title7">Popular Searches</span>
+    <div class="title-area-three text-center wow fadeInUp" data-wow-delay="600ms">
+        <span class="sub-title7">Popular Searches</span>
 
-            </div>
+    </div>
     <div class="container pop_search_index">
         <div class="row">
             <div class="col-6 col-sm-4 col-md-2">
@@ -332,7 +265,7 @@
                     <li><a href="#">Student discounts</a></li>
                 </ul>
             </div>
-            
+
             <!-- Column 2 -->
             <div class="col-12 col-md-4 text-center text-md-start mb-4 mb-md-0">
                 <h5>Helpful Info & Contact Details</h5>
@@ -344,7 +277,7 @@
                     <li><a href="#">Press Centre</a></li>
                 </ul>
             </div>
-            
+
             <!-- Column 3 -->
             <div class="col-12 col-md-4 text-center text-md-start">
                 <h5>More from <br> MyVoucherCodes</h5>
@@ -358,7 +291,7 @@
         </div>
     </div>
 </section>
- 
- 
- 
-  <?php include 'footer.php';  ?>
+
+
+
+<?php include 'footer.php';  ?>
