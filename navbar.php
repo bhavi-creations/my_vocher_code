@@ -86,15 +86,16 @@
                         <ul class="sub-menu ">
                             <li class="movies_bg"><a class=" " href="#"> Movies</a>
                                 <ul>
-                                    <li><a class="sub_mini_serices" href="view_deals.php"> Devi Multiplex </a></li>
-                                    <li><a class="sub_mini_serices" href="view_deals.php"> Anand Complex </a></li>
-                                    <li><a class="sub_mini_serices" href="view_deals.php">Sri Priya Padma Priya </a></li>
-                                    <li><a class="sub_mini_serices" href="view_deals.php"> C&C </a></li>
-                                    <li><a class="sub_mini_serices" href="view_deals.php"> Devi Multiplex </a></li>
-                                    <li><a class="sub_mini_serices" href="view_deals.php"> Anand Complex </a></li>
-                                    <li><a class="sub_mini_serices" href="view_deals.php">Sri Priya Padma Priya </a></li>
-                                    <li><a class="sub_mini_serices" href="view_deals.php"> C&C </a></li>
-
+                                    <li><a class="sub_mini_serices" href="devi.php"> Devi Multiplex </a></li>
+                                    <li><a class="sub_mini_serices" href="anand.php"> Anand Complex </a></li>
+                                    <li><a class="sub_mini_serices" href="sripadma.php">Sri Priya Padma Priya </a></li>
+                                    <li><a class="sub_mini_serices" href="cc.php"> C&C </a></li>
+                                    <li><a class="sub_mini_serices" href="geeth_sangeeth.php"> Geeth Sangeeth </a></li>
+                                    <li><a class="sub_mini_serices" href="tirumala.php"> Thirumala </a></li>
+                                    <li><a class="sub_mini_serices" href="inox.php">Inox </a></li>
+                                    <li><a class="sub_mini_serices" href="surya.php"> Surya </a></li>
+                                    <li><a class="sub_mini_serices" href="satyagowri.php"> Satya Gowri </a></li>
+                                    <li><a class="sub_mini_serices" href="mayuri.php"> Mayuri </a></li>
                                     <li><a class="view_all_sub_mini_serices" href="list_layout.php"> View All Movies Deals </a></li>
 
                                 </ul>
@@ -302,15 +303,16 @@
                                                     <div class="col-3 movies_bg my-2">
                                                         <li><a class="sub_heading" href="#"> Movies</a>
                                                             <ul>
-                                                                <li><a class="sub_mini_serices" href="view_deals.php"> Devi Multiplex </a></li>
-                                                                <li><a class="sub_mini_serices" href="view_deals.php"> Anand Complex </a></li>
-                                                                <li><a class="sub_mini_serices" href="view_deals.php">Sri Priya Padma Priya </a></li>
-                                                                <li><a class="sub_mini_serices" href="view_deals.php"> C&C </a></li>
-                                                                <li><a class="sub_mini_serices" href="view_deals.php"> Devi Multiplex </a></li>
-                                                                <li><a class="sub_mini_serices" href="view_deals.php"> Anand Complex </a></li>
-                                                                <li><a class="sub_mini_serices" href="view_deals.php">Sri Priya Padma Priya </a></li>
-                                                                <li><a class="sub_mini_serices" href="view_deals.php"> C&C </a></li>
-
+                                                                <li><a class="sub_mini_serices" href="devi.php"> Devi Multiplex </a></li>
+                                                                <li><a class="sub_mini_serices" href="anand.php"> Anand Complex </a></li>
+                                                                <li><a class="sub_mini_serices" href="sripadma.php">Sri Priya Padma Priya </a></li>
+                                                                <li><a class="sub_mini_serices" href="cc.php"> C&C </a></li>
+                                                                <li><a class="sub_mini_serices" href="geeth_sangeeth.php">  Geeth Sangeeth </a></li>
+                                                                <li><a class="sub_mini_serices" href="tirumala.php">Thirumala </a></li>
+                                                                <li><a class="sub_mini_serices" href="inox.php">Inox </a></li>
+                                                                <li><a class="sub_mini_serices" href="surya.php"> Surya </a></li>
+                                                                <li><a class="sub_mini_serices" href="satyagowri.php"> Satya Gowri </a></li>
+                                                                <li><a class="sub_mini_serices" href="mayuri.php"> Mayuri </a></li>
                                                                 <li><a class="view_all_sub_mini_serices" href="list_layout.php"> View All Movies Deals </a></li>
 
                                                             </ul>
@@ -492,7 +494,7 @@
 
 
 
-    <section id="adSection">
+     <!-- <section id="adSection">
         <div class="sticky-ad" id="stickyAd">
             <button class="close-ad" onclick="closeAd()">✖</button>
             <img src="assets/img/self_images/top_add.png" class="img-fluid" alt="Ad">
@@ -517,4 +519,4 @@
             }
         </script>
 
-    </section>
+    </section>  -->

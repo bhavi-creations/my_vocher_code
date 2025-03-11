@@ -14,14 +14,16 @@
                         <h4 class="yello_heding"><img src="assets/img/self_images/day.png" alt=""  class="img-fluid"> Movies</h4>
                             
                         <ul>
-                            <li><a class="sub_mini_serices" href="view_deals.php"> Devi Multiplex  </a></li>
-                            <li><a class="sub_mini_serices" href="view_deals.php"> Anand Complex </a></li>
-                            <li><a class="sub_mini_serices" href="view_deals.php">Sri Priya Padma Priya </a></li> 
-                            <li><a class="sub_mini_serices" href="view_deals.php"> C&C </a></li>
-                            <li><a class="sub_mini_serices" href="view_deals.php"> Devi Multiplex  </a></li>
-                            <li><a class="sub_mini_serices" href="view_deals.php"> Anand Complex </a></li>
-                            <li><a class="sub_mini_serices" href="view_deals.php">Sri Priya Padma Priya </a></li> 
-                            <li><a class="sub_mini_serices" href="view_deals.php"> C&C </a></li>
+                            <li><a class="sub_mini_serices" href="devi.php"> Devi Multiplex  </a></li>
+                            <li><a class="sub_mini_serices" href="anand.php"> Anand Complex </a></li>
+                            <li><a class="sub_mini_serices" href="sripadma.php">Sri Priya Padma Priya </a></li> 
+                            <li><a class="sub_mini_serices" href="cc.php"> C&C </a></li>
+                            <li><a class="sub_mini_serices" href="geeth_sangeeth.php"> Geeth Sangeeth  </a></li>
+                            <li><a class="sub_mini_serices" href="tirumala.php"> Thirumala </a></li>
+                            <li><a class="sub_mini_serices" href="inox.php">Inox    </a></li> 
+                            <li><a class="sub_mini_serices" href="surya.php">Surya</a></li>
+                            <li><a class="sub_mini_serices" href="satyagowri.php">Satya Gowri</a></li>
+                            <li><a class="sub_mini_serices" href="mayuri.php">Mayuri</a></li>
 
                             <li><a class="view_all_sub_mini_serices" href="list_layout.php">     View All Movies Deals </a></li>
 

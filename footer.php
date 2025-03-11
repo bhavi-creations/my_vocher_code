@@ -1,4 +1,4 @@
-<section id="bottomAdBanner" class="sticky-bottom-ad">
+ <!-- <section id="bottomAdBanner" class="sticky-bottom-ad">
     <button class="close-bottom-ad" onclick="closeBottomAd()">X</button>
     <div class="container">
         <div class="row">
@@ -12,8 +12,7 @@
         }
     </script>
 
-</section>
-
+</section>   -->
 
 
 
