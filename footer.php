@@ -1,18 +1,16 @@
- <!-- <section id="bottomAdBanner" class="sticky-bottom-ad">
-    <button class="close-bottom-ad" onclick="closeBottomAd()">X</button>
-    <div class="container">
-        <div class="row">
-            <img src="assets/img/self_images/last_add.png" class="img-fluid" alt="Bottom Ad Banner">
-        </div>
-    </div>
-
+<section id="bottomAdBanner" class="sticky-bottom-ad">
+        <!-- Close button at the top-right corner of the entire row -->
+        <button class="close-bottom-ad" onclick="closeBottomAd()">✖</button>
+        
+        <!-- Image centered in the row -->
+        <img src="assets/img/self_images/last_add.png" class="img-fluid" alt="Bottom Ad Banner">
+    </section>
+    
     <script>
         function closeBottomAd() {
             document.getElementById("bottomAdBanner").style.display = "none";
         }
     </script>
-
-</section>   -->
 
 
 
