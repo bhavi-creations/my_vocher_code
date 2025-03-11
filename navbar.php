@@ -494,29 +494,28 @@
 
 
 
-     <!-- <section id="adSection">
+     <section id="adSection">
         <div class="sticky-ad" id="stickyAd">
-            <button class="close-ad" onclick="closeAd()">✖</button>
-            <img src="assets/img/self_images/top_add.png" class="img-fluid" alt="Ad">
+            <div class="ad-container">
+                <button class="close-ad" onclick="closeAd()">✖</button>
+                <img src="assets/img/self_images/top_add.png" class="img-fluid" alt="Ad">
+            </div>
         </div>
-
-        <script>
-            // Make the ad sticky when scrolling
-            window.addEventListener("scroll", function() {
-                let ad = document.getElementById("stickyAd");
-                let adPosition = ad.offsetTop;
-
-                if (window.scrollY >= adPosition) {
-                    ad.classList.add("fixed");
-                } else {
-                    ad.classList.remove("fixed");
-                }
-            });
-
-            // Function to close the ad
-            function closeAd() {
-                document.getElementById("adSection").style.display = "none";
+    </section>
+    
+    <script>
+        window.addEventListener("scroll", function() {
+            let ad = document.getElementById("stickyAd");
+            let adPosition = ad.offsetTop;
+    
+            if (window.scrollY >= adPosition) {
+                ad.classList.add("fixed");
+            } else {
+                ad.classList.remove("fixed");
             }
-        </script>
-
-    </section>  -->
+        });
+    
+        function closeAd() {
+            document.getElementById("adSection").style.display = "none";
+        }
+    </script> 
