@@ -2820,6 +2820,7 @@
 
 
 
+ 
 
 
 
@@ -2831,80 +2832,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- /* Styling the bottom ad container */
- .sticky-bottom-ad {
-   position: fixed;
-   bottom: 0;
-   /* Stick to the bottom */
-   left: 0;
-   width: 100%;
-   /* Full width */
-   /* background: rgba(0, 0, 0, 0.395); */
-   /* Slightly transparent */
-   padding: 10px 0;
-   /* box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.2); */
-   /* Shadow at the top */
-   text-align: center;
-   z-index: 9999;
-   /* Stay above everything */
- }
-
- /* Ensure the image is centered and responsive */
- .sticky-bottom-ad img {
-   max-width: 100%;
-   height: auto;
- }
-
- /* Close button styles */
- .close-bottom-ad {
-   position: absolute;
-   background: rgb(205, 205, 205);
-   color: rgb(0, 0, 0);
-   border: none;
-   padding: 2px 10px;
-   cursor: pointer;
-   border-radius: 50%;
- }
-
- @media (max-width:992px) {
-   .close-bottom-ad {
-     position: absolute;
-     top: 1px;
-     right: 1px;
-     font-size: 16px;
-
-   }
- }
-
- @media (min-width:992px) {
-   .close-bottom-ad {
-     position: absolute;
-     top: 5px;
-     right: 15px;
-     font-size: 16px;
-
-   }
- }
-
- /* Hover effect for close button */
- .close-bottom-ad:hover {
-   background: rgb(0, 139, 137);
- }
-
+  
 
 
 
@@ -2951,16 +2879,19 @@
 /* Close button positioned inside the image container */
 .close-ad {
   position: absolute;
- 
-  background: rgb(205, 205, 205);
-  color: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
   border: none;
-  cursor: pointer;
-  border-radius: 50%;
-  font-size: 16px;
+  width: 25px;
+  height: 25px;
+  font-size: 14px;
   font-weight: bold;
-  padding: 5px 10px;
-  transition: background 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10000;
 }
 
 /* Hover effect on close button */
@@ -2981,7 +2912,7 @@
   .close-ad {
       font-size: 12px;
       padding: 3px 8px;
-      top: -4px;
+      top: 0px;
       right: 5px;
   }
 }
@@ -3011,3 +2942,94 @@
   flex: 1;
   font-weight: 800;
  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* Styling the bottom ad container */
+.sticky-bottom-ad {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  padding: 10px 0;
+}
+
+/* Wrapper for the image */
+.ad-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* Ensure the image is centered */
+.sticky-bottom-ad img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Close button positioned ON TOP of the image */
+.close-bottom-ad {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  width: 25px;
+  height: 25px;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10000; /* Ensures button is above the image */
+}
+
+/* Hover effect for close button */
+.close-bottom-ad:hover {
+  background: red;
+}
+
+
+@media (min-width:992px) {
+  .close-bottom-ad {
+    
+    top: 0px;
+    right: -40px;
+ 
+  }
+}
+
+@media (max-width:992px) {
+  .close-bottom-ad {
+    
+    top: 5px;
+    right: 5px;
+ 
+  }
+}

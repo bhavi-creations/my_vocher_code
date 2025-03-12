@@ -494,7 +494,7 @@
 
 
 
-     <section id="adSection">
+    <section id="adSection">
         <div class="sticky-ad" id="stickyAd">
             <div class="ad-container">
                 <button class="close-ad" onclick="closeAd()">✖</button>
@@ -518,4 +518,4 @@
         function closeAd() {
             document.getElementById("adSection").style.display = "none";
         }
-    </script> 
+    </script>

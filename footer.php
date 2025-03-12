@@ -1,9 +1,11 @@
 <section id="bottomAdBanner" class="sticky-bottom-ad">
-        <!-- Close button at the top-right corner of the entire row -->
-        <button class="close-bottom-ad" onclick="closeBottomAd()">✖</button>
-        
-        <!-- Image centered in the row -->
-        <img src="assets/img/self_images/last_add.png" class="img-fluid" alt="Bottom Ad Banner">
+        <div style="position: relative; display: inline-block;">
+            <!-- Close button at the top-right of the image -->
+            <button class="close-bottom-ad" onclick="closeBottomAd()">✖</button>
+            
+            <!-- Image centered -->
+            <img src="assets/img/self_images/last_add.png" class="img-fluid" alt="Bottom Ad Banner">
+        </div>
     </section>
     
     <script>
