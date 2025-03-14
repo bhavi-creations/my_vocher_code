@@ -2896,7 +2896,7 @@
 
 /* Hover effect on close button */
 .close-ad:hover {
-  background: rgb(0, 139, 137);
+  background: red;
 }
 
 
@@ -2943,18 +2943,27 @@
   font-weight: 800;
  }
 
+ .job_roles{
+  color: #7D1C4A;
+  text-align: right;
+  flex: 1;
+  font-weight: 800;
+ }
 
 
+ .job_image_card {
+  display: inline-block; /* Prevents extra spacing */
+  padding: 10px; /* Adds some spacing around the image */
+  background: #fff; /* Ensures the shadow is visible */
+  border-radius: 8px; /* Softens edges */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5) !important; /* Stronger shadow */
+}
+
+ 
+ 
 
 
-
-
-
-
-
-
-
-
+ 
 
 
 

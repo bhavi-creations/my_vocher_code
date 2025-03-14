@@ -18,49 +18,34 @@
     <div class="container">
 
         <div class="text-center   mb-5">
-        <h1> Tirumala  Screen 1</h1>
+            <h1> Bhavi Creation Pvt Ltd</h1>
 
 
         </div>
         <div class="row">
             <div class="col-lg-9 col-12">
                 <div class="row">
+                    
 
-                    <div class="col-md-8 col-12 my-2">
-
-
-                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="assets/img/self_images/chhaava (1).png" class="  img-fluid  d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="assets/img/self_images/chhaava (2).png" class="  img-fluid  d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="assets/img/self_images/chhaava (3).png" class="  img-fluid  d-block w-100" alt="...">
-                                </div>
-                            </div>
+                    <div class="col-md-6 col-12 my-2 ">
+                        <div class="job_image_card">
+                            <img src="assets/img/self_images/Bhavi pvt ltd logo.png" class="img-fluid" alt="">
                         </div>
-
 
                     </div>
 
-                    <div class="col-md-4 col-12  my-2 movie_title_card">
+                    <div class="col-md-6   col-12  my-2 movie_title_card">
 
                         <div class="product-content">
                             <div class="d-flex justify-content-between align-items-center">
-                                <p class="movie-label"><strong>Title:</strong></p>
-                                <h3 class="movie-value">Chhaava</h3>
+                                <p class="movie-label"><strong>category : </strong></p>
+                                <h4 class="movie-value">Digital Marketing</h4>
                             </div>
                             <div class="d-flex justify-content-between align-items-center">
-                                <p class="movie-label"><strong>Rating:</strong></p>
+                                <p class="movie-label"><strong>Rating :</strong></p>
                                 <p class="movie-value">⭐⭐⭐⭐⭐</p>
                             </div>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <p class="movie-label"><strong>Genre:</strong></p>
-                                <p class="movie-value">Historical Drama</p>
-                            </div>
+
                         </div>
 
                     </div>
@@ -69,53 +54,70 @@
                 </div>
                 <div class="row my-5 p-3">
                     <div class="col-md-8 col-12 ">
-                        <h2>About the movie</h2>
+                        <h2>About Company</h2>
                         <h6>
-                            After Chhatrapati Shivaji Maharaj`s death, the Mughals aim to expand into the Deccan, only to face his fearless son, Chhatrapati Sambhaji Maharaj. Chhaava, inspired by Shivaji Sawant`s novel, chronicles Chhatrapati Sambhaji Maharaj`s unwavering resistance against Aurangzeb, marked by courage, strategy, and betrayal.
-
+                        Launch your career with Bhavi Creations! Free internships in SEO, Content Writing, Design, and more. Join us in Kakinada and grow your skills
                         </h6>
+
+
+                        <h2>Address</h2>
+                        <h6>
+                        Plot no 28, H No 70, 17-28, RTO Office Rd, opposite to New, behind J.N.T.U.Engineering College Play Ground, Ranga Rao Nagar, Kakinada, Andhra Pradesh 533003
+                        </h6>
+
                     </div>
                     <div class="col-md-4 col-12  ">
-                        <h3 class="text-center">Cast</h3>
+                        <h3 class="text-center">Jobs</h3>
 
                         <div class="product-content">
 
                             <div class="d-flex justify-content-between align-items-center">
-                                <p class="movie-label"><strong>Actor : </strong></p>
-                                <p class="cast_names">Vicky Kaushal</p>
+                                <p class="movie-label"><strong>vacancies : </strong></p>
+                                <p class="job_roles">7</p>
                             </div>
 
                             <div class="d-flex justify-content-between align-items-center">
-                                <p class="movie-label"><strong>Actor : </strong></p>
-                                <p class="cast_names">Rashmika Mandanna </p>
+                                <p class="movie-label"><strong>Designer : </strong></p>
+                                <p class="job_roles">2 </p>
                             </div>
                             <div class="d-flex justify-content-between align-items-center">
-                                <p class="movie-label"><strong>Actor : </strong></p>
-                                <p class="cast_names">Akshaye Khanna </p>
+                                <p class="movie-label"><strong>Website developer : </strong></p>
+                                <p class="job_roles">1 </p>
                             </div>
-
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="movie-label"><strong>   Content Writer : </strong></p>
+                                <p class="job_roles">2 </p>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="movie-label"><strong> Social Media Maneger : </strong></p>
+                                <p class="job_roles">1 </p>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="movie-label"><strong> Telecaller : </strong></p>
+                                <p class="job_roles">1 </p>
+                            </div>
                         </div>
 
 
 
                         <hr>
 
-                        <h3 class="text-center">Crew</h3>
+                        <h3 class="text-center">Contact</h3>
 
                         <div class="product-content">
 
                             <div class="d-flex justify-content-between align-items-center">
-                                <p class="movie-label"><strong>Director : </strong></p>
-                                <p class="cast_names">Laxman Utekar</p>
+                                <p class="movie-label"><strong>Phone : </strong></p>
+                                <p class="job_roles">9876543210</p>
                             </div>
 
                             <div class="d-flex justify-content-between align-items-center">
-                                <p class="movie-label"><strong>Producer : </strong></p>
-                                <p class="cast_names">Dinesh Vijan </p>
+                                <p class="movie-label"><strong>Location : </strong></p>
+                                <p class="job_roles">Kakinada </p>
                             </div>
                             <div class="d-flex justify-content-between align-items-center">
-                                <p class="movie-label"><strong>Musician : </strong></p>
-                                <p class="cast_names">A. R. Rahman </p>
+                                <p class="movie-label"><strong>Website : </strong></p>
+                                <p class="job_roles"> <a target="_blank" href="https://bhavicreationspvtltd.com/"> bhavicreationspvtltd.com </a> </p>
                             </div>
 
                         </div>

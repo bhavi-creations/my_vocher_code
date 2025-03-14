@@ -199,7 +199,7 @@
                     </li>
 
                     <li>
-                        <a href="services.php">Jobs </a>
+                        <a href="jobs.php">Jobs </a>
                     </li>
 
 
@@ -441,7 +441,7 @@
 
 
                                         <li class="">
-                                            <a class=" " href="#"> Jobs </a>
+                                            <a class=" " href="jobs.php"> Jobs </a>
                                         </li>
 
 
@@ -494,7 +494,7 @@
 
 
 
-    <section id="adSection">
+    <!-- <section id="adSection">
         <div class="sticky-ad" id="stickyAd">
             <div class="ad-container">
                 <button class="close-ad" onclick="closeAd()">✖</button>
@@ -518,4 +518,4 @@
         function closeAd() {
             document.getElementById("adSection").style.display = "none";
         }
-    </script>
+    </script> -->
