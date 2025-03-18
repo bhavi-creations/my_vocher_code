@@ -213,7 +213,7 @@
 
 
                     <li>
-                        <a href="services.php">Events </a>
+                        <a href="events.php">Events </a>
                     </li>
                     <li>
                         <a href="services.php">Travel </a>
@@ -455,7 +455,7 @@
 
 
                                         <li>
-                                            <a href="index.php">Events</a>
+                                            <a href="events.php">Events</a>
                                         </li>
                                         <li>
                                             <a href="index.php">Travel</a>
