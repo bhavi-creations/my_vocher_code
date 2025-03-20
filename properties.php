@@ -77,22 +77,6 @@
 
 
 
- 
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -152,12 +136,12 @@
                     <section class="OfferContainer_exclusive__non wow fadeInUp my-2" data-wow-delay="100ms">
                         <div class="col-12  card_div px-3">
                             <div class="row  py-3">
-                                <div class="col-4 col-md-3">
-                                    <img src="assets/img/test/sideimg1.png" class="img-fluid" alt="">
+                                <div class="col-12 col-md-3 job_image_card">
+                                    <img src="assets/img/test/sideimg1.png" class="img-fluid company_logo_size" alt="">
 
                                 </div>
 
-                                <div class="col-8 col-md-9">
+                                <div class="col-12 col-md-9">
                                     <h4>Commercial Building </h4>
                                     <p class="property_p_tag"><strong class="property_strong"> Price :</strong> Not Provided </p>
                                     <p class="property_p_tag"> <strong class="property_strong"> Location : </strong> Suryaraopet, Kkd </p>
@@ -203,8 +187,8 @@
                     <section class="OfferContainer_exclusive__non wow fadeInUp my-2" data-wow-delay="100ms">
                         <div class="col-12  card_div px-3">
                             <div class="row  py-3">
-                                <div class="col-4 col-md-3">
-                                    <img src="assets/img/test/sideimg1.png" class="img-fluid" alt="">
+                                <div class="col-12 col-md-3 job_image_card">
+                                    <img src="assets/img/test/sideimg1.png" class="img-fluid company_logo_size" alt="">
 
                                 </div>
 
@@ -255,8 +239,8 @@
                     <section class="OfferContainer_exclusive__non wow fadeInUp my-2" data-wow-delay="100ms">
                         <div class="col-12  card_div px-3">
                             <div class="row  py-3">
-                                <div class="col-4 col-md-3">
-                                    <img src="assets/img/test/sideimg1.png" class="img-fluid" alt="">
+                                <div class="col-12 col-md-3 job_image_card">
+                                    <img src="assets/img/test/sideimg1.png" class="img-fluid company_logo_size" alt="">
 
                                 </div>
 

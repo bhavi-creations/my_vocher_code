@@ -106,12 +106,13 @@
                                     <li><a class="sub_mini_serices" href="business_layout.php"> BBQ </a></li>
                                     <li><a class="sub_mini_serices" href="business_layout.php"> Kritunga </a></li>
                                     <li><a class="sub_mini_serices" href="business_layout.php"> Chitti Babu </a></li>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> Food Train </a></li>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> BBQ </a></li>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> Kritunga </a></li>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> Chitti Babu </a></li>
+                                    <li><a class="sub_mini_serices" href="business_layout.php"> Arabian nights </a></li>
+                                    <li><a class="sub_mini_serices" href="business_layout.php"> Hungry Birds </a></li>
+                                    <li><a class="sub_mini_serices" href="business_layout.php"> Khaidi </a></li>
+                                    <li><a class="sub_mini_serices" href="business_layout.php"> Zeeshan </a></li>
 
-                                    <li><a class="view_all_sub_mini_serices" href="list_layout.php"> View All Resturents Deals </a></li>
+
+                                    <li><a class="view_all_sub_mini_serices" href="resturents_layouts.php"> View All Resturents Deals </a></li>
 
                                 </ul>
                             </li>
@@ -121,10 +122,10 @@
                                     <li><a class="sub_mini_serices" href="business_layout.php"> V & V </a></li>
                                     <li><a class="sub_mini_serices" href="business_layout.php"> Tomboi </a></li>
                                     <li><a class="sub_mini_serices" href="business_layout.php"> VJ saloon </a></li>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> Royal Touch </a></li>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> V & V </a></li>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> Tomboi </a></li>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> VJ saloon </a></li>
+                                    <li><a class="sub_mini_serices" href="business_layout.php"> Nice Looks </a></li>
+                                    <li><a class="sub_mini_serices" href="business_layout.php"> Alince </a></li>
+                                    <li><a class="sub_mini_serices" href="business_layout.php"> Celebraties secrets </a></li>
+                                    <li><a class="sub_mini_serices" href="business_layout.php"> Decent </a></li>
 
 
                                     <li><a class="view_all_sub_mini_serices" href="list_layout.php"> View All Saloons & Spa Deals </a></li>
@@ -307,7 +308,7 @@
                                                                 <li><a class="sub_mini_serices" href="anand.php"> Anand Complex </a></li>
                                                                 <li><a class="sub_mini_serices" href="sripadma.php">Sri Priya Padma Priya </a></li>
                                                                 <li><a class="sub_mini_serices" href="cc.php"> C&C </a></li>
-                                                                <li><a class="sub_mini_serices" href="geeth_sangeeth.php">  Geeth Sangeeth </a></li>
+                                                                <li><a class="sub_mini_serices" href="geeth_sangeeth.php"> Geeth Sangeeth </a></li>
                                                                 <li><a class="sub_mini_serices" href="tirumala.php">Thirumala </a></li>
                                                                 <li><a class="sub_mini_serices" href="inox.php">Inox </a></li>
                                                                 <li><a class="sub_mini_serices" href="surya.php"> Surya </a></li>
@@ -326,12 +327,12 @@
                                                                 <li><a class="sub_mini_serices" href="business_layout.php"> BBQ </a></li>
                                                                 <li><a class="sub_mini_serices" href="business_layout.php"> Kritunga </a></li>
                                                                 <li><a class="sub_mini_serices" href="business_layout.php"> Chitti Babu </a></li>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Food Train </a></li>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> BBQ </a></li>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Kritunga </a></li>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Chitti Babu </a></li>
+                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Arabian nights </a></li>
+                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Hungry Birds </a></li>
+                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Khaidi </a></li>
+                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Zeeshan </a></li>
 
-                                                                <li><a class="view_all_sub_mini_serices" href="list_layout.php"> View All Resturents Deals </a></li>
+                                                                <li><a class="view_all_sub_mini_serices" href="resturents_layouts.php"> View All Resturents Deals </a></li>
 
                                                             </ul>
                                                         </li>
@@ -344,10 +345,10 @@
                                                                 <li><a class="sub_mini_serices" href="business_layout.php"> V & V </a></li>
                                                                 <li><a class="sub_mini_serices" href="business_layout.php"> Tomboi </a></li>
                                                                 <li><a class="sub_mini_serices" href="business_layout.php"> VJ saloon </a></li>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Royal Touch </a></li>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> V & V </a></li>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Tomboi </a></li>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> VJ saloon </a></li>
+                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Nice Looks </a></li>
+                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Alince </a></li>
+                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Celebraties secrets </a></li>
+                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Decent </a></li>
 
 
                                                                 <li><a class="view_all_sub_mini_serices" href="list_layout.php"> View All Saloons & Spa Deals </a></li>

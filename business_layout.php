@@ -62,8 +62,8 @@
         <div class="container">
 
             <div class="text-center   ">
-                <h1>Welcome to The Royal Feast</h1>
-                <h5> Experience Luxury Dining at The Royal Feast</h5>
+                <h1>Welcome to The Royal Food</h1>
+                <h5> Experience Luxury Dining at The Royal Food</h5>
             </div>
             <div class="row">
                 <div class="col-lg-9 col-12">
@@ -92,7 +92,7 @@
                         </div>
                         <div class="col-md-4 col-12 p-3">
                             <div class="product-content">
-                                <h3>The Royal Feast</h3>
+                                <h3>The Royal Food</h3>
                                 <p class="product-title h5 mt-1">Savor elegance, taste perfection, indulge in luxury</p>
 
                                 <div class="rating-wrap">
@@ -108,8 +108,8 @@
                     <div class="row my-5 p-3">
                         <div class="col-md-8 col-12 ">
                             <h6>
-                                A Royal Feast is a grand celebration of flavors, tradition, and opulence, offering an unforgettable dining experience fit for kings and queens. It brings together the finest ingredients, exquisite culinary craftsmanship, and a lavish presentation to create a meal that delights all the senses.
-                                From rich, slow-cooked delicacies to aromatic spices and gourmet desserts, every dish in a royal feast tells a story of heritage and culinary mastery. Whether it’s a medieval banquet, a Mughal spread, or a regal European dining affair, the essence of a Royal Feast lies in its abundance, elegance, and ability to transport diners to a world of luxury.
+                                A Royal Food is a grand celebration of flavors, tradition, and opulence, offering an unforgettable dining experience fit for kings and queens. It brings together the finest ingredients, exquisite culinary craftsmanship, and a lavish presentation to create a meal that delights all the senses.
+                                From rich, slow-cooked delicacies to aromatic spices and gourmet desserts, every dish in a royal Food tells a story of heritage and culinary mastery. Whether it’s a medieval banquet, a Mughal spread, or a regal European dining affair, the essence of a Royal Food lies in its abundance, elegance, and ability to transport diners to a world of luxury.
 
 
                             </h6>

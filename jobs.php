@@ -129,17 +129,15 @@ $result = $stmt->get_result();
 
 
 
-
-
-                    <section class="OfferContainer_exclusive__non wow fadeInUp my-2" data-wow-delay="100ms">
+                <section class="OfferContainer_exclusive__non wow fadeInUp my-2" data-wow-delay="100ms">
                         <div class="col-12  card_div px-3">
                             <div class="row  py-3">
-                                <div class="col-4 col-md-4 job_image_card">
-                                    <img src="assets/img/self_images/Bhavi pvt ltd logo.png" class="img-fluid" alt="">
+                                <div class="col-12 col-md-4 job_image_card  ">
+                                    <img src="assets/img/self_images/Bhavi pvt ltd logo.png" class="img-fluid company_logo_size" alt="">
 
                                 </div>
 
-                                <div class="col-8 col-md-8">
+                                <div class="col-12 col-md-8">
                                     <h4>Bhavi Creations Pvt Ltd</h4>
                                     <p class="property_p_tag"><strong class="property_strong"> vacancies :</strong> 12 </p>
                                     <p class="property_p_tag"> <strong class="property_strong"> Location : </strong> Kakinada </p>
@@ -171,25 +169,33 @@ $result = $stmt->get_result();
                     <section class="OfferContainer_exclusive__non wow fadeInUp my-2" data-wow-delay="100ms">
                         <div class="col-12  card_div px-3">
                             <div class="row  py-3">
-                                <div class="col-4 col-md-4 job_image_card">
-                                    <img src="assets/img/self_images/Bhavi pvt ltd logo.png" class="img-fluid" alt="">
+                                <div class="col-12 col-md-4 job_image_card  ">
+                                    <img src="assets/img/self_images/Bhavi pvt ltd logo.png" class="img-fluid company_logo_size" alt="">
+
                                 </div>
 
-                                <div class="col-8 col-md-8">
+                                <div class="col-12 col-md-8">
                                     <h4>Bhavi Creations Pvt Ltd</h4>
                                     <p class="property_p_tag"><strong class="property_strong"> vacancies :</strong> 12 </p>
                                     <p class="property_p_tag"> <strong class="property_strong"> Location : </strong> Kakinada </p>
                                     <p class="property_p_tag"> <strong class="property_strong"> Phone :</strong> 9876543210 </p>
                                     <p class="property_p_tag"> <strong class="property_strong"> Website :</strong><a target="_blank" href="https://bhavicreationspvtltd.com/"> https://bhavicreationspvtltd.com/ </a>  </p>
 
+
                                 </div>
+
+
+
 
                                 <div class="col-12 terms_cond_styles">
                                     <div class="terms_justify">
+
                                         <p>
                                             <a href="job_full_page.php" class=" ">View More Details</a>
                                         </p>
                                     </div>
+
+                                     
 
                                 </div>
                             </div>
@@ -200,25 +206,33 @@ $result = $stmt->get_result();
                     <section class="OfferContainer_exclusive__non wow fadeInUp my-2" data-wow-delay="100ms">
                         <div class="col-12  card_div px-3">
                             <div class="row  py-3">
-                                <div class="col-4 col-md-4 job_image_card">
-                                    <img src="assets/img/self_images/Bhavi pvt ltd logo.png" class="img-fluid" alt="">
+                                <div class="col-12 col-md-4 job_image_card  ">
+                                    <img src="assets/img/self_images/Bhavi pvt ltd logo.png" class="img-fluid company_logo_size" alt="">
+
                                 </div>
 
-                                <div class="col-8 col-md-8">
+                                <div class="col-12 col-md-8">
                                     <h4>Bhavi Creations Pvt Ltd</h4>
                                     <p class="property_p_tag"><strong class="property_strong"> vacancies :</strong> 12 </p>
                                     <p class="property_p_tag"> <strong class="property_strong"> Location : </strong> Kakinada </p>
                                     <p class="property_p_tag"> <strong class="property_strong"> Phone :</strong> 9876543210 </p>
                                     <p class="property_p_tag"> <strong class="property_strong"> Website :</strong><a target="_blank" href="https://bhavicreationspvtltd.com/"> https://bhavicreationspvtltd.com/ </a>  </p>
 
+
                                 </div>
+
+
+
 
                                 <div class="col-12 terms_cond_styles">
                                     <div class="terms_justify">
+
                                         <p>
                                             <a href="job_full_page.php" class=" ">View More Details</a>
                                         </p>
                                     </div>
+
+                                     
 
                                 </div>
                             </div>
@@ -226,29 +240,36 @@ $result = $stmt->get_result();
                         </div>
                     </section>
 
-
                     <section class="OfferContainer_exclusive__non wow fadeInUp my-2" data-wow-delay="100ms">
                         <div class="col-12  card_div px-3">
                             <div class="row  py-3">
-                                <div class="col-4 col-md-4 job_image_card">
-                                    <img src="assets/img/self_images/Bhavi pvt ltd logo.png" class="img-fluid" alt="">
+                                <div class="col-12 col-md-4 job_image_card  ">
+                                    <img src="assets/img/self_images/Bhavi pvt ltd logo.png" class="img-fluid company_logo_size" alt="">
+
                                 </div>
 
-                                <div class="col-8 col-md-8">
+                                <div class="col-12 col-md-8">
                                     <h4>Bhavi Creations Pvt Ltd</h4>
                                     <p class="property_p_tag"><strong class="property_strong"> vacancies :</strong> 12 </p>
                                     <p class="property_p_tag"> <strong class="property_strong"> Location : </strong> Kakinada </p>
                                     <p class="property_p_tag"> <strong class="property_strong"> Phone :</strong> 9876543210 </p>
                                     <p class="property_p_tag"> <strong class="property_strong"> Website :</strong><a target="_blank" href="https://bhavicreationspvtltd.com/"> https://bhavicreationspvtltd.com/ </a>  </p>
 
+
                                 </div>
+
+
+
 
                                 <div class="col-12 terms_cond_styles">
                                     <div class="terms_justify">
+
                                         <p>
                                             <a href="job_full_page.php" class=" ">View More Details</a>
                                         </p>
                                     </div>
+
+                                     
 
                                 </div>
                             </div>
