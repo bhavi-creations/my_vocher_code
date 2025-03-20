@@ -3093,3 +3093,32 @@
 .book_now_btn:hover {
   background-color: #0056b3;
 }
+
+
+
+
+
+
+.marquee-section {
+  background: linear-gradient(to Left, #e446b4, #b92a7e, #d74097, #e446b4);
+  color: white;
+  padding: 8px 0px 0px 6px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+
+.marquee-content {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.marquee {
+  white-space: nowrap;
+}
+
+
+
+.footer_bg_last{
+  background-color: #7d1c4a;
+}

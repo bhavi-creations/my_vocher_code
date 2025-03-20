@@ -23,7 +23,7 @@
 
 
 
-<footer class="bg-dark p-5">
+<footer class=" footer_bg_last  pt-3">
     <div class="container">
         <div class="row align-items-center">
             <!-- Left Side: Mobile Number -->

@@ -1,20 +1,15 @@
  <?php include 'navbar.php';  ?>
 
 
- <h2 class="h1 text-center mt-5">All your favourite discount codes in one place.</h2>
-
- <p class="  text-center">Find promo & voucher codes for all your chosen UK brands. Over 11000 discounts available
-     today!</p>
 
 
-
- <!-- <section>
-        <div class="container">
-            <div class="row">
-                <img src="assets/img/self_images/3uFKWSiuGKES9MyfJCPsHT-1280-80.jpg.webp" class="img-fluid text-center">
-            </div>
-        </div>
-    </section>-->
+ <section class="marquee-section">
+     <div class="marquee_content">
+         <marquee behavior="scroll" direction="left" class="marquee">
+              Get  &nbsp; &nbsp; All   &nbsp; &nbsp; Your   &nbsp; &nbsp; Discounts   &nbsp; &nbsp; At   &nbsp; &nbsp;One    &nbsp; &nbsp;Place  &nbsp; &nbsp; IN   &nbsp; &nbsp;Kakinada   &nbsp; &nbsp; Hub    &nbsp; &nbsp; ||   &nbsp; &nbsp;   Get   &nbsp; &nbsp; All   &nbsp; &nbsp; Your  &nbsp; &nbsp; Discounts   &nbsp; &nbsp; At    &nbsp; &nbsp;One   &nbsp; &nbsp;Place   &nbsp; &nbsp; IN   &nbsp; &nbsp;Kakinada  &nbsp; &nbsp; Hub    &nbsp; &nbsp; ||   &nbsp; &nbsp;   Get   &nbsp; &nbsp; All   &nbsp; &nbsp; Your  &nbsp; &nbsp; Discounts   &nbsp; &nbsp; At    &nbsp; &nbsp;One   &nbsp; &nbsp;Place   &nbsp; &nbsp; IN   &nbsp; &nbsp;Kakinada  &nbsp; &nbsp; Hub    &nbsp; &nbsp; ||   &nbsp; &nbsp;   Get   &nbsp; &nbsp; All   &nbsp; &nbsp; Your  &nbsp; &nbsp; Discounts   &nbsp; &nbsp; At    &nbsp; &nbsp;One   &nbsp; &nbsp;Place   &nbsp; &nbsp; IN   &nbsp; &nbsp;Kakinada  &nbsp; &nbsp; Hub    &nbsp; &nbsp; 
+         </marquee>
+     </div>
+ </section>
 
 
 
@@ -55,13 +50,13 @@
                          <div class="row">
                              <div class="col-4 ">
                                  <div class="img_border">
-                                     <img src="assets/img/self_images/mini.webp" class="img-fluid" alt="">
+                                     <img src="assets/img/self_images/srmt_mall.jpeg" class="img-fluid" alt="">
                                  </div>
                              </div>
 
                              <div class="col-8">
                                  <div class="d-flex">
-                                     <p class="brand_name">Dunlem</p>
+                                     <p class="brand_name">SRMT Mall</p>
                                  </div>
 
                                  <div class="d-flex">
@@ -70,8 +65,7 @@
                              </div>
                          </div>
                          <div class="row  mini_card_spacings">
-                             <p class="brand_special_discount">Up to 50% off 1000s of items at Dunelm - Don't miss
-                                 out, ...</p>
+                             <p class="brand_special_discount">On Your First Purchase Get Up to 50% off 1000rs of items at SRMT </p>
                          </div>
                      </div>
                  </div>
@@ -81,13 +75,13 @@
                          <div class="row">
                              <div class="col-4 ">
                                  <div class="img_border">
-                                     <img src="assets/img/self_images/ghd.webp" class="img-fluid" alt="">
+                                     <img src="assets/img/self_images/bbq.png" class="img-fluid" alt="">
                                  </div>
                              </div>
 
                              <div class="col-8">
                                  <div class="d-flex">
-                                     <p class="brand_name">GHD</p>
+                                     <p class="brand_name">BBQ Nation</p>
                                  </div>
 
                                  <div class="d-flex">
@@ -96,7 +90,7 @@
                              </div>
                          </div>
                          <div class="row  mini_card_spacings">
-                             <p class="brand_special_discount">Up to 50% off 1000s of items at Dunelm - Don't miss
+                             <p class="brand_special_discount">Up to 10% off 1000rs of items at BBQ - Don't miss
                                  out, ...</p>
                          </div>
                      </div>
@@ -106,13 +100,13 @@
                          <div class="row">
                              <div class="col-4 ">
                                  <div class="img_border">
-                                     <img src="assets/img/self_images/mini.webp" class="img-fluid" alt="">
+                                     <img src="assets/img/self_images/lenskart.png" class="img-fluid" alt="">
                                  </div>
                              </div>
 
                              <div class="col-8">
                                  <div class="d-flex">
-                                     <p class="brand_name">Dunlem</p>
+                                     <p class="brand_name">LensKart</p>
                                  </div>
 
                                  <div class="d-flex">
@@ -121,7 +115,7 @@
                              </div>
                          </div>
                          <div class="row  mini_card_spacings">
-                             <p class="brand_special_discount">Up to 50% off 1000s of items at Dunelm - Don't miss
+                             <p class="brand_special_discount">Up to 20% off 1000rs of items at Lentkart - Don't miss
                                  out, ...</p>
                          </div>
                      </div>
@@ -131,13 +125,13 @@
                          <div class="row">
                              <div class="col-4 ">
                                  <div class="img_border">
-                                     <img src="assets/img/self_images/fragennce.webp" class="img-fluid" alt="">
+                                     <img src="assets/img/self_images/kfc.png" class="img-fluid" alt="">
                                  </div>
                              </div>
 
                              <div class="col-8">
                                  <div class="d-flex">
-                                     <p class="brand_name">Fragence</p>
+                                     <p class="brand_name">KFC</p>
                                  </div>
 
                                  <div class="d-flex">
@@ -146,7 +140,7 @@
                              </div>
                          </div>
                          <div class="row  mini_card_spacings">
-                             <p class="brand_special_discount">Up to 50% off 1000s of items at Dunelm - Don't miss
+                             <p class="brand_special_discount">Up to 20% off 800rs of items at KFC - Don't miss
                                  out, ...</p>
                          </div>
                      </div>
@@ -156,13 +150,13 @@
                          <div class="row">
                              <div class="col-4 ">
                                  <div class="img_border">
-                                     <img src="assets/img/self_images/tower.webp" class="img-fluid" alt="">
+                                     <img src="assets/img/self_images/reliance trends.jpeg" class="img-fluid" alt="">
                                  </div>
                              </div>
 
                              <div class="col-8">
                                  <div class="d-flex">
-                                     <p class="brand_name">Tower</p>
+                                     <p class="brand_name">Reliance Trends</p>
                                  </div>
 
                                  <div class="d-flex">
@@ -171,7 +165,7 @@
                              </div>
                          </div>
                          <div class="row  mini_card_spacings">
-                             <p class="brand_special_discount">Up to 50% off 1000s of items at Dunelm - Don't miss
+                             <p class="brand_special_discount">Up to 50% off 1000s of items at Trends - Don't miss
                                  out, ...</p>
                          </div>
                      </div>
@@ -184,19 +178,18 @@
          </div>
          <div class="swiper-container team-slider"> <!-- Swiper Container -->
              <div class="swiper-wrapper"> <!-- Swiper Wrapper -->
-                 <!-- Team block -->
                  <div class="swiper-slide "> <!-- Swiper Slide -->
                      <div class="card_border_styles">
                          <div class="row">
                              <div class="col-4 ">
                                  <div class="img_border">
-                                     <img src="assets/img/self_images/mini.webp" class="img-fluid" alt="">
+                                     <img src="assets/img/self_images/lenskart.png" class="img-fluid" alt="">
                                  </div>
                              </div>
 
                              <div class="col-8">
                                  <div class="d-flex">
-                                     <p class="brand_name">Dunlem</p>
+                                     <p class="brand_name">LensKart</p>
                                  </div>
 
                                  <div class="d-flex">
@@ -205,33 +198,7 @@
                              </div>
                          </div>
                          <div class="row  mini_card_spacings">
-                             <p class="brand_special_discount">Up to 50% off 1000s of items at Dunelm - Don't miss
-                                 out, ...</p>
-                         </div>
-                     </div>
-                 </div>
-
-                 <div class="swiper-slide "> <!-- Swiper Slide -->
-                     <div class="card_border_styles">
-                         <div class="row">
-                             <div class="col-4 ">
-                                 <div class="img_border">
-                                     <img src="assets/img/self_images/ghd.webp" class="img-fluid" alt="">
-                                 </div>
-                             </div>
-
-                             <div class="col-8">
-                                 <div class="d-flex">
-                                     <p class="brand_name">GHD</p>
-                                 </div>
-
-                                 <div class="d-flex">
-                                     <p class="brand_type"> <i class="fal fa-star"></i> Exclusive</p>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="row  mini_card_spacings">
-                             <p class="brand_special_discount">Up to 50% off 1000s of items at Dunelm - Don't miss
+                             <p class="brand_special_discount">Up to 20% off 1000rs of items at Lentkart - Don't miss
                                  out, ...</p>
                          </div>
                      </div>
@@ -241,13 +208,13 @@
                          <div class="row">
                              <div class="col-4 ">
                                  <div class="img_border">
-                                     <img src="assets/img/self_images/mini.webp" class="img-fluid" alt="">
+                                     <img src="assets/img/self_images/kfc.png" class="img-fluid" alt="">
                                  </div>
                              </div>
 
                              <div class="col-8">
                                  <div class="d-flex">
-                                     <p class="brand_name">Dunlem</p>
+                                     <p class="brand_name">KFC</p>
                                  </div>
 
                                  <div class="d-flex">
@@ -256,7 +223,7 @@
                              </div>
                          </div>
                          <div class="row  mini_card_spacings">
-                             <p class="brand_special_discount">Up to 50% off 1000s of items at Dunelm - Don't miss
+                             <p class="brand_special_discount">Up to 20% off 800rs of items at KFC - Don't miss
                                  out, ...</p>
                          </div>
                      </div>
@@ -266,13 +233,13 @@
                          <div class="row">
                              <div class="col-4 ">
                                  <div class="img_border">
-                                     <img src="assets/img/self_images/fragennce.webp" class="img-fluid" alt="">
+                                     <img src="assets/img/self_images/reliance trends.jpeg" class="img-fluid" alt="">
                                  </div>
                              </div>
 
                              <div class="col-8">
                                  <div class="d-flex">
-                                     <p class="brand_name">Fragence</p>
+                                     <p class="brand_name">Reliance Trends</p>
                                  </div>
 
                                  <div class="d-flex">
@@ -281,7 +248,7 @@
                              </div>
                          </div>
                          <div class="row  mini_card_spacings">
-                             <p class="brand_special_discount">Up to 50% off 1000s of items at Dunelm - Don't miss
+                             <p class="brand_special_discount">Up to 50% off 1000s of items at Trends - Don't miss
                                  out, ...</p>
                          </div>
                      </div>
@@ -291,13 +258,13 @@
                          <div class="row">
                              <div class="col-4 ">
                                  <div class="img_border">
-                                     <img src="assets/img/self_images/tower.webp" class="img-fluid" alt="">
+                                     <img src="assets/img/self_images/srmt_mall.jpeg" class="img-fluid" alt="">
                                  </div>
                              </div>
 
                              <div class="col-8">
                                  <div class="d-flex">
-                                     <p class="brand_name">Tower</p>
+                                     <p class="brand_name">SRMT Mall</p>
                                  </div>
 
                                  <div class="d-flex">
@@ -306,13 +273,36 @@
                              </div>
                          </div>
                          <div class="row  mini_card_spacings">
-                             <p class="brand_special_discount">Up to 50% off 1000s of items at Dunelm - Don't miss
-                                 out, ...</p>
+                             <p class="brand_special_discount">On Your First Purchase Get Up to 50% off 1000rs of items at SRMT </p>
                          </div>
                      </div>
                  </div>
 
+                 <div class="swiper-slide "> <!-- Swiper Slide -->
+                     <div class="card_border_styles">
+                         <div class="row">
+                             <div class="col-4 ">
+                                 <div class="img_border">
+                                     <img src="assets/img/self_images/bbq.png" class="img-fluid" alt="">
+                                 </div>
+                             </div>
 
+                             <div class="col-8">
+                                 <div class="d-flex">
+                                     <p class="brand_name">BBQ Nation</p>
+                                 </div>
+
+                                 <div class="d-flex">
+                                     <p class="brand_type"> <i class="fal fa-star"></i> Exclusive</p>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="row  mini_card_spacings">
+                             <p class="brand_special_discount">Up to 10% off 1000rs of items at BBQ - Don't miss
+                                 out, ...</p>
+                         </div>
+                     </div>
+                 </div>
              </div>
              <!-- Pagination and Navigation Buttons -->
 
@@ -354,7 +344,7 @@
                              </div>
                          </div>
                          <div class="row  mini_card_spacings">
-                             <p class="brand_special_discount">Up to 50% off 1000s of items at Dunelm - Don't miss
+                             <p class="brand_special_discount">Up to 50% off 1000s of items at Under Armour - Don't miss
                                  out, ...</p>
                          </div>
                      </div>
@@ -365,13 +355,13 @@
                          <div class="row">
                              <div class="col-4 ">
                                  <div class="img_border">
-                                     <img src="assets/img/self_images/converse.webp" class="img-fluid" alt="">
+                                     <img src="assets/img/self_images/adida.png" class="img-fluid" alt="">
                                  </div>
                              </div>
 
                              <div class="col-8">
                                  <div class="d-flex">
-                                     <p class="brand_name">Converse</p>
+                                     <p class="brand_name">Adadis</p>
                                  </div>
 
                                  <div class="d-flex">
@@ -380,7 +370,7 @@
                              </div>
                          </div>
                          <div class="row  mini_card_spacings">
-                             <p class="brand_special_discount">Up to 50% off 1000s of items at Dunelm - Don't miss
+                             <p class="brand_special_discount">Up to 50% off 1000s of items at Adadis - Don't miss
                                  out, ...</p>
                          </div>
                      </div>
@@ -390,13 +380,13 @@
                          <div class="row">
                              <div class="col-4 ">
                                  <div class="img_border">
-                                     <img src="assets/img/self_images/Sunglass.webp" class="img-fluid" alt="">
+                                     <img src="assets/img/self_images/nike.png" class="img-fluid" alt="">
                                  </div>
                              </div>
 
                              <div class="col-8">
                                  <div class="d-flex">
-                                     <p class="brand_name">Sunglass Hut
+                                     <p class="brand_name">Nike
                                      </p>
                                  </div>
 
@@ -406,7 +396,7 @@
                              </div>
                          </div>
                          <div class="row  mini_card_spacings">
-                             <p class="brand_special_discount">Up to 50% off 1000s of items at Dunelm - Don't miss
+                             <p class="brand_special_discount">Up to 50% off 1000s of items at Nike - Don't miss
                                  out, ...</p>
                          </div>
                      </div>
@@ -432,7 +422,7 @@
                              </div>
                          </div>
                          <div class="row  mini_card_spacings">
-                             <p class="brand_special_discount">Up to 50% off 1000s of items at Dunelm - Don't miss
+                             <p class="brand_special_discount">Up to 50% off 1000s of items at Ray-Ban - Don't miss
                                  out, ...</p>
                          </div>
                      </div>
@@ -442,13 +432,13 @@
                          <div class="row">
                              <div class="col-4 ">
                                  <div class="img_border">
-                                     <img src="assets/img/self_images/tower.webp" class="img-fluid" alt="">
+                                     <img src="assets/img/self_images/Crocs-logo.jpg" class="img-fluid" alt="">
                                  </div>
                              </div>
 
                              <div class="col-8">
                                  <div class="d-flex">
-                                     <p class="brand_name">Tower</p>
+                                     <p class="brand_name">Crocs</p>
                                  </div>
 
                                  <div class="d-flex">
@@ -457,7 +447,7 @@
                              </div>
                          </div>
                          <div class="row  mini_card_spacings">
-                             <p class="brand_special_discount">Up to 50% off 1000s of items at Dunelm - Don't miss
+                             <p class="brand_special_discount">Up to 50% off 1000s of items at Crocs - Don't miss
                                  out, ...</p>
                          </div>
                      </div>
@@ -471,6 +461,108 @@
          <div class="swiper-container team-slider"> <!-- Swiper Container -->
              <div class="swiper-wrapper"> <!-- Swiper Wrapper -->
                  <!-- Team block -->
+                 <div class="swiper-slide "> <!-- Swiper Slide -->
+                     <div class="card_border_styles">
+                         <div class="row">
+                             <div class="col-4 ">
+                                 <div class="img_border">
+                                     <img src="assets/img/self_images/Ray.webp" class="img-fluid" alt="">
+                                 </div>
+                             </div>
+
+                             <div class="col-8">
+                                 <div class="d-flex">
+                                     <p class="brand_name">Ray-Ban
+                                     </p>
+                                 </div>
+
+                                 <div class="d-flex">
+                                     <p class="brand_type"> <i class="fal fa-star"></i> Exclusive</p>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="row  mini_card_spacings">
+                             <p class="brand_special_discount">Up to 50% off 1000s of items at Ray-Ban - Don't miss
+                                 out, ...</p>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="swiper-slide "> <!-- Swiper Slide -->
+                     <div class="card_border_styles">
+                         <div class="row">
+                             <div class="col-4 ">
+                                 <div class="img_border">
+                                     <img src="assets/img/self_images/Crocs-logo.jpg" class="img-fluid" alt="">
+                                 </div>
+                             </div>
+
+                             <div class="col-8">
+                                 <div class="d-flex">
+                                     <p class="brand_name">Crocs</p>
+                                 </div>
+
+                                 <div class="d-flex">
+                                     <p class="brand_type"> <i class="fal fa-star"></i> Exclusive</p>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="row  mini_card_spacings">
+                             <p class="brand_special_discount">Up to 50% off 1000s of items at Crocs - Don't miss
+                                 out, ...</p>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="swiper-slide "> <!-- Swiper Slide -->
+                     <div class="card_border_styles">
+                         <div class="row">
+                             <div class="col-4 ">
+                                 <div class="img_border">
+                                     <img src="assets/img/self_images/adida.png" class="img-fluid" alt="">
+                                 </div>
+                             </div>
+
+                             <div class="col-8">
+                                 <div class="d-flex">
+                                     <p class="brand_name">Adadis</p>
+                                 </div>
+
+                                 <div class="d-flex">
+                                     <p class="brand_type"> <i class="fal fa-star"></i> Exclusive</p>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="row  mini_card_spacings">
+                             <p class="brand_special_discount">Up to 50% off 1000s of items at Adadis - Don't miss
+                                 out, ...</p>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="swiper-slide "> <!-- Swiper Slide -->
+                     <div class="card_border_styles">
+                         <div class="row">
+                             <div class="col-4 ">
+                                 <div class="img_border">
+                                     <img src="assets/img/self_images/nike.png" class="img-fluid" alt="">
+                                 </div>
+                             </div>
+
+                             <div class="col-8">
+                                 <div class="d-flex">
+                                     <p class="brand_name">Nike
+                                     </p>
+                                 </div>
+
+                                 <div class="d-flex">
+                                     <p class="brand_type"> <i class="fal fa-star"></i> Exclusive</p>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="row  mini_card_spacings">
+                             <p class="brand_special_discount">Up to 50% off 1000s of items at Nike - Don't miss
+                                 out, ...</p>
+                         </div>
+                     </div>
+                 </div>
                  <div class="swiper-slide "> <!-- Swiper Slide -->
                      <div class="card_border_styles">
                          <div class="row">
@@ -492,116 +584,11 @@
                              </div>
                          </div>
                          <div class="row  mini_card_spacings">
-                             <p class="brand_special_discount">Up to 50% off 1000s of items at Dunelm - Don't miss
+                             <p class="brand_special_discount">Up to 50% off 1000s of items at Under Armour - Don't miss
                                  out, ...</p>
                          </div>
                      </div>
                  </div>
-
-                 <div class="swiper-slide "> <!-- Swiper Slide -->
-                     <div class="card_border_styles">
-                         <div class="row">
-                             <div class="col-4 ">
-                                 <div class="img_border">
-                                     <img src="assets/img/self_images/converse.webp" class="img-fluid" alt="">
-                                 </div>
-                             </div>
-
-                             <div class="col-8">
-                                 <div class="d-flex">
-                                     <p class="brand_name">Converse</p>
-                                 </div>
-
-                                 <div class="d-flex">
-                                     <p class="brand_type"> <i class="fal fa-star"></i> Exclusive</p>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="row  mini_card_spacings">
-                             <p class="brand_special_discount">Up to 50% off 1000s of items at Dunelm - Don't miss
-                                 out, ...</p>
-                         </div>
-                     </div>
-                 </div>
-                 <div class="swiper-slide "> <!-- Swiper Slide -->
-                     <div class="card_border_styles">
-                         <div class="row">
-                             <div class="col-4 ">
-                                 <div class="img_border">
-                                     <img src="assets/img/self_images/Sunglass.webp" class="img-fluid" alt="">
-                                 </div>
-                             </div>
-
-                             <div class="col-8">
-                                 <div class="d-flex">
-                                     <p class="brand_name">Sunglass Hut
-                                     </p>
-                                 </div>
-
-                                 <div class="d-flex">
-                                     <p class="brand_type"> <i class="fal fa-star"></i> Exclusive</p>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="row  mini_card_spacings">
-                             <p class="brand_special_discount">Up to 50% off 1000s of items at Dunelm - Don't miss
-                                 out, ...</p>
-                         </div>
-                     </div>
-                 </div>
-                 <div class="swiper-slide "> <!-- Swiper Slide -->
-                     <div class="card_border_styles">
-                         <div class="row">
-                             <div class="col-4 ">
-                                 <div class="img_border">
-                                     <img src="assets/img/self_images/Ray.webp" class="img-fluid" alt="">
-                                 </div>
-                             </div>
-
-                             <div class="col-8">
-                                 <div class="d-flex">
-                                     <p class="brand_name">Ray-Ban
-                                     </p>
-                                 </div>
-
-                                 <div class="d-flex">
-                                     <p class="brand_type"> <i class="fal fa-star"></i> Exclusive</p>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="row  mini_card_spacings">
-                             <p class="brand_special_discount">Up to 50% off 1000s of items at Dunelm - Don't miss
-                                 out, ...</p>
-                         </div>
-                     </div>
-                 </div>
-                 <div class="swiper-slide "> <!-- Swiper Slide -->
-                     <div class="card_border_styles">
-                         <div class="row">
-                             <div class="col-4 ">
-                                 <div class="img_border">
-                                     <img src="assets/img/self_images/tower.webp" class="img-fluid" alt="">
-                                 </div>
-                             </div>
-
-                             <div class="col-8">
-                                 <div class="d-flex">
-                                     <p class="brand_name">Tower</p>
-                                 </div>
-
-                                 <div class="d-flex">
-                                     <p class="brand_type"> <i class="fal fa-star"></i> Exclusive</p>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="row  mini_card_spacings">
-                             <p class="brand_special_discount">Up to 50% off 1000s of items at Dunelm - Don't miss
-                                 out, ...</p>
-                         </div>
-                     </div>
-                 </div>
-
-
              </div>
              <!-- Pagination and Navigation Buttons -->
 
@@ -966,7 +953,7 @@
                      <li><a href="">Inox</a></li>
                      <li><a href="">Devi Multiplex</a></li>
                      <li><a href="">Anand Complex</a></li>
-                    
+
                  </ul>
              </div>
              <div class="col-6 col-sm-4 col-md-2">
@@ -975,7 +962,7 @@
                      <li><a href="">Kritunga</a></li>
                      <li><a href="">Zeeshan</a></li>
                      <li><a href="">Food Train</a></li>
-                
+
                  </ul>
              </div>
              <div class="col-6 col-sm-4 col-md-2">
@@ -983,7 +970,7 @@
                      <li><a href="">Royal Touch</a></li>
                      <li><a href="">Celebraties secrets</a></li>
                      <li><a href="">VJ saloon</a></li>
-                    
+
                  </ul>
              </div>
              <div class="col-6 col-sm-4 col-md-2">
@@ -991,14 +978,14 @@
                      <li><a href="">Malbar</a></li>
                      <li><a href="">Tansique</a></li>
                      <li><a href="">Kazana Jewellery</a></li>
-                      
+
                  </ul>
              </div>
              <div class="col-6 col-sm-4 col-md-2">
                  <ul class="dot">
                      <li><a href="">Women's Fashion</a></li>
                      <li><a href="">Designerwear</a></li>
-                     
+
                  </ul>
              </div>
              <div class="col-6 col-sm-4 col-md-2">
@@ -1007,7 +994,7 @@
                      <li><a href="">Dental Hospitals</a></li>
                      <li><a href="">ENT Hospitals</a></li>
                      <li><a href="">Neuro Hospitals</a></li>
-                     
+
                  </ul>
              </div>
          </div>
