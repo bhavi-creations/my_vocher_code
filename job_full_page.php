@@ -43,7 +43,7 @@
                             </div>
                             <div class="d-flex justify-content-between align-items-center">
                                 <p class="movie-label"><strong>Rating :</strong></p>
-                                <p class="movie-value">⭐⭐⭐⭐⭐</p>
+                                <p class="movie-value">⭐⭐⭐⭐⭐ 5/5</p>
                             </div>
 
                         </div>
@@ -135,7 +135,7 @@
                                     <img src="assets/img/test/woman.png" alt="User" class="profile-img">
                                     <div class="">
                                         <p><strong>Emma R</strong></p>
-                                        <p class="stars">⭐⭐⭐⭐⭐</p>
+                                        <p class="stars">⭐⭐⭐⭐⭐ 5/5</p>
                                     </div>
                                 </div>
                                 <p class="review-text">
@@ -178,7 +178,7 @@
                                     <img src="assets/img/test/woman.png" alt="User" class="profile-img">
                                     <div class="">
                                         <p><strong> Sophia L.</strong></p>
-                                        <p class="stars">⭐⭐⭐⭐⭐</p>
+                                        <p class="stars">⭐⭐⭐⭐⭐ 5/5</p>
                                     </div>
                                 </div>
                                 <p class="review-text">
@@ -221,7 +221,7 @@
                                     <img src="assets/img/test/woman.png" alt="User" class="profile-img">
                                     <div class="">
                                         <p><strong> Sophia L.</strong></p>
-                                        <p class="stars">⭐⭐⭐⭐⭐</p>
+                                        <p class="stars">⭐⭐⭐⭐⭐ 5/5</p>
                                     </div>
                                 </div>
                                 <p class="review-text">
@@ -256,7 +256,7 @@
                                 <option value="⭐⭐">⭐⭐</option>
                                 <option value="⭐⭐⭐">⭐⭐⭐</option>
                                 <option value="⭐⭐⭐⭐">⭐⭐⭐⭐</option>
-                                <option value="⭐⭐⭐⭐⭐" selected>⭐⭐⭐⭐⭐</option>
+                                <option value="⭐⭐⭐⭐⭐ 5/5" selected>⭐⭐⭐⭐⭐ 5/5</option>
                             </select>
                             <textarea id="comment" rows="3" placeholder="Write a comment..." required></textarea>
                             <input type="file" id="imageUpload" accept="image/*">

@@ -3052,3 +3052,44 @@
  
   }
 }
+
+
+.white_color{
+  color: white !important;
+  font-weight: bold;
+  margin-bottom: 14px !important;
+}
+ 
+
+.car_iamge{
+  margin-bottom: 10px !important;
+}
+
+
+
+
+
+
+.rental-card {
+  background: #fff;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.car_image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.book_now_btn {
+  background-color: #007bff;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.book_now_btn:hover {
+  background-color: #0056b3;
+}

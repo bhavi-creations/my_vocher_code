@@ -54,7 +54,7 @@
                             </div>
                             <div class="d-flex justify-content-between align-items-center">
                                 <p class="movie-label"><strong>Rating:</strong></p>
-                                <p class="movie-value">⭐⭐⭐⭐⭐</p>
+                                <p class="movie-value">⭐⭐⭐⭐⭐ 5/5</p>
                             </div>
                             <div class="d-flex justify-content-between align-items-center">
                                 <p class="movie-label"><strong>Location:</strong></p>

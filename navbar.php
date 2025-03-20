@@ -66,7 +66,7 @@
         <div class="vs-menu-area text-center">
             <button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
             <div class="mobile-logo">
-                <a href="index.php"><img src="assets/img/self_images/samp_logo.png" alt="Medixi"></a>
+                <a href="index.php"><img src="assets/img/self_images/kakinada_hub.png" alt="Kakinada Hub"></a>
             </div>
             <form action="#" class="mobile-menu-form">
                 <input type="text" class="form-control" placeholder="Search...">
@@ -166,7 +166,7 @@
                                     <li><a class="sub_mini_serices" href="business_layout.php"> Neuro Hospitals </a></li>
                                     <li><a class="sub_mini_serices" href="business_layout.php"> ENT Hospitals </a></li>
                                     <li><a class="sub_mini_serices" href="business_layout.php"> Skincare Hospitals </a></li>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> Phytherypy </a></li>
+                                    <li><a class="sub_mini_serices" href="business_layout.php"> physiotherapy </a></li>
 
                                     <li><a class="view_all_sub_mini_serices" href="list_layout.php"> View All Fashion Deals </a></li>
 
@@ -204,20 +204,20 @@
                     </li>
 
 
-                    <li class="menu-item-has-children">
+                    <!-- <li class="menu-item-has-children">
                         <a href="blog.html">Blog</a>
-                        <!-- <ul class="sub-menu">
+                        <ul class="sub-menu">
                             <li><a href="blog.html">Blog</a></li>
                             <li><a href="blog-details.html">Blog Details</a></li>
-                        </ul> -->
-                    </li>
+                        </ul>
+                    </li> -->
 
 
                     <li>
                         <a href="events.php">Events </a>
                     </li>
                     <li>
-                        <a href="services.php">Travel </a>
+                        <a href="travel.php">Travel </a>
                     </li>
                     <li>
                         <a href="properties.php">Properties</a>
@@ -286,9 +286,11 @@
                         <div class="row align-items-center justify-content-between">
                             <div class="col-auto">
                                 <div class="header1-logo py-2">
-                                    <a href="index.php"><img src="assets/img/self_images/samp_logo.png" class="d-lg-none" alt="Logo"></a>
+                                    <a href="index.php"><img src="assets/img/self_images/kkd_mini.png" class="  img-fluid  " alt="Logo"></a>
                                 </div>
                             </div>
+
+
                             <div class="col text-end text-lg-center">
                                 <nav class="main-menu menu-style1 d-none d-lg-block">
                                     <ul>
@@ -398,7 +400,7 @@
                                                                 <li><a class="sub_mini_serices" href="business_layout.php"> Neuro Hospitals </a></li>
                                                                 <li><a class="sub_mini_serices" href="business_layout.php"> ENT Hospitals </a></li>
                                                                 <li><a class="sub_mini_serices" href="business_layout.php"> Skincare Hospitals </a></li>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Phytherypy </a></li>
+                                                                <li><a class="sub_mini_serices" href="business_layout.php"> physiotherapy </a></li>
 
                                                                 <li><a class="view_all_sub_mini_serices" href="list_layout.php"> View All Fashion Deals </a></li>
 
@@ -446,20 +448,20 @@
                                         </li>
 
 
-                                        <li class="menu-item-has-children">
+                                        <!-- <li class="menu-item-has-children">
                                             <a href="index.php">Blog</a>
-                                            <!-- <ul class="sub-menu">
+                                            <ul class="sub-menu">
                                                 <li><a href="index.php">Blog</a></li>
                                                 <li><a href="index.php">Blog Details</a></li>
-                                            </ul> -->
-                                        </li>
+                                            </ul>
+                                        </li> -->
 
 
                                         <li>
                                             <a href="events.php">Events</a>
                                         </li>
                                         <li>
-                                            <a href="index.php">Travel</a>
+                                            <a href="travel.php">Travel</a>
                                         </li>
                                         <li>
                                             <a href="properties.php">Properties</a>

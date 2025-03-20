@@ -24,19 +24,32 @@
 
 
 <footer class="bg-dark p-5">
-    <h3 class="text-center text-white">My<span class="">Voucher </span>Codes</h3>
-    <div class=" text-center side ">
-        <ul class="foot ">
-            <a href="">ABOUT US</a>
-            <a href="">CONTACTFUTURE'S EXPERTS</a>
-            <a href="">TERMS AND CONDITIONS</a>
-            <a href="">PRIVACY POLICY</a>
-            <a href="">COOKIES POLICY</a>
-        </ul>
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Left Side: Mobile Number -->
+            <div class="col-md-4 text-white">
+                <p class="mb-0 white_color"><i class="fas fa-phone-alt"></i> +91 98765 43210</p>
+            </div>
+
+            <!-- Center: Kakinada Hub -->
+            <div class="col-md-4 text-center">
+                <h3 class="text-white">Kakinada Hub</h3>
+            </div>
+
+            <!-- Right Side: Social Media Icons -->
+            <div class="col-md-4 text-end">
+                <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
     </div>
-    <p class="text-center text-white">MyVoucherCodes is part of Future plc, an international media group and leading digital publisher. Visit our corporate site.</p>
-    <p class="text-center text-white">© Future Publishing Limited Quay House, The Ambury, Bath BA1 1UA. All rights reserved. England and Wales company registration number 2008885.</p>
 </footer>
+
+<!-- Include Font Awesome for icons -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
+
 
 <!-- <section class="d-flex justify-content-center">
         <div class="container text-center">
