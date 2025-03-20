@@ -3,10 +3,14 @@
 
 <div id="overlay" class="overlay"></div>
 <button id="restaurant-icon" class="restaurant-icon">🏠</button>
+
+
 <div id="sidebar" class="sidebar side_view">
     <h1 class="side_bar_tittle">Propertys 🏠</h1>
     <ul id="restaurant-list" class="restaurant-list"></ul>
 </div>
+
+
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         const restaurantIcon = document.getElementById("restaurant-icon");
@@ -85,25 +89,25 @@
 <div class="container text-center">
     <!-- For larger screens (lg and up) - Show buttons -->
     <div class="filter_buttons redirect_section mt-5 d-none d-lg-flex flex-wrap justify-content-center">
-        <a href="blogs.php?service="><button class="redirect_blog_srivice">All</button></a>
-        <a href="blogs.php?service=Root Canal"><button class="redirect_blog_srivice">House Rent</button></a>
-        <a href="blogs.php?service=Wisdom Tooth Removal"><button class="redirect_blog_srivice">Commercial Rent</button></a>
-        <a href="blogs.php?service=Bad Breath Treatment"><button class="redirect_blog_srivice">House Sale</button></a>
-        <a href="blogs.php?service=Teeth Cleaning"><button class="redirect_blog_srivice">Commercial Sale</button></a>
-        <a href="blogs.php?service=Gum Treatment"><button class="redirect_blog_srivice">Land Sale</button></a>
-        <a href="blogs.php?service=Gum Treatment"><button class="redirect_blog_srivice">Land Lease</button></a>
+        <a href="blogs.php?service= "><button class="redirect_blog_srivice">All</button></a>
+        <a href="blogs.php?service= "><button class="redirect_blog_srivice">House Rent</button></a>
+        <a href="blogs.php?service= "><button class="redirect_blog_srivice">Commercial Rent</button></a>
+        <a href="blogs.php?service= "><button class="redirect_blog_srivice">House Sale</button></a>
+        <a href="blogs.php?service= "><button class="redirect_blog_srivice">Commercial Sale</button></a>
+        <a href="blogs.php?service= "><button class="redirect_blog_srivice">Land Sale</button></a>
+        <a href="blogs.php?service= "><button class="redirect_blog_srivice">Land Lease</button></a>
     </div>
 
     <!-- For smaller screens (md and below) - Show dropdown -->
     <div class="d-lg-none mt-5">
         <select id="filterDropdown" class="form-select">
             <option value="blogs.php?service=">All</option>
-            <option value="blogs.php?service=Root Canal">House Rent</option>
-            <option value="blogs.php?service=Wisdom Tooth Removal">Commercial Rent</option>
-            <option value="blogs.php?service=Bad Breath Treatment">House Sale</option>
-            <option value="blogs.php?service=Teeth Cleaning">Commercial Sale</option>
-            <option value="blogs.php?service=Gum Treatment">Land Sale</option>
-            <option value="blogs.php?service=Gum Treatment">Land Lease</option>
+            <option value="blogs.php?service= ">House Rent</option>
+            <option value="blogs.php?service= ">Commercial Rent</option>
+            <option value="blogs.php?service= ">House Sale</option>
+            <option value="blogs.php?service= ">Commercial Sale</option>
+            <option value="blogs.php?service= ">Land Sale</option>
+            <option value="blogs.php?service= ">Land Lease</option>
         </select>
     </div>
 </div>
