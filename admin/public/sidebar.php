@@ -1,7 +1,6 @@
 <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar" style="background-color: #A9A8D4;">
     <!-- Sidebar - Brand -->
     <a class="sidebar-brand d-flex align-items-center justify-content-center bg-light text-primary" href="./index.php">
-
         <div class="sidebar-brand-text mx-3">Kakinada <br> Hub</div>
     </a>
 
@@ -19,23 +18,20 @@
     <!-- Divider -->
     <hr class="sidebar-divider">
 
-    <!-- Fetch and Display Services -->
+    <!-- Services Management -->
     <div class="sidebar-heading">Services</div>
-
-    <?php
-    include '../../db.connection/db_connection.php';
-
-
-    $result = mysqli_query($conn, "SELECT * FROM services");
-    while ($row = mysqli_fetch_assoc($result)) {
-        echo '<li class="nav-item">
-                <a class="nav-link" href="' . $row['slug'] . '.php">
-                    <i class="fas fa-list"></i>
-                    <span>' . $row['name'] . '</span>
-                </a>
-              </li>';
-    }
-    ?>
+    <li class="nav-item">
+        <a class="nav-link" href="add_service.php">
+            <i class="fas fa-plus-circle"></i>
+            <span>Add Service</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="view_services.php">
+            <i class="fas fa-eye"></i>
+            <span>View Services</span>
+        </a>
+    </li>
 
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">
