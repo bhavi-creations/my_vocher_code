@@ -365,6 +365,7 @@ $result = $stmt->get_result();
     }
 </script>
 
+<?php include 'chat_bot.php';  ?>
 
 
 <?php include 'footer.php';  ?>

@@ -363,5 +363,6 @@
 
 
 
+<?php include 'chat_bot.php';  ?>
 
 <?php include 'footer.php';  ?>

@@ -47,6 +47,7 @@
 
 
 
+<?php include 'chat_bot.php';  ?>
 
 
 
