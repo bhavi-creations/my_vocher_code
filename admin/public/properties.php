@@ -39,6 +39,14 @@
                                 </script>
                             <?php endif; ?>
 
+                            <!-- Filter Buttons -->
+                            <div class="mb-3">
+                                <button class="btn btn-primary filter-btn" data-filter="all">All</button>
+                                <button class="btn btn-success filter-btn" data-filter="For Sale">For Sale</button>
+                                <button class="btn btn-warning filter-btn" data-filter="For Rent">For Rent</button>
+                                <button class="btn btn-info filter-btn" data-filter="For Lease">For Lease</button>
+                            </div>
+
                             <!-- Property Table -->
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
@@ -49,7 +57,7 @@
                                         <table class="table table-bordered" width="100%" cellspacing="0">
                                             <thead>
                                                 <tr>
-                                                    <th>ID</th>
+                                                    <th>S.No</th>
                                                     <th>Property Name</th>
                                                     <th>Location</th>
                                                     <th>Price</th>
@@ -57,14 +65,16 @@
                                                     <th>Actions</th>
                                                 </tr>
                                             </thead>
-                                            <tbody>
+                                            <tbody id="property-table-body">
                                                 <?php
-                                                $query = "SELECT * FROM properties ORDER BY id DESC"; // Modify table name if needed
+                                                $query = "SELECT * FROM properties ORDER BY id DESC";
                                                 $result = mysqli_query($conn, $query);
+                                                $s_no = 1;
                                                 while ($row = mysqli_fetch_assoc($result)):
+                                                    $propertyType = trim($row['type']); // Ensure no spaces
                                                 ?>
-                                                    <tr>
-                                                        <td><?php echo $row['id']; ?></td>
+                                                    <tr class="property-row" data-type="<?php echo $propertyType; ?>">
+                                                        <td class="serial-no"><?php echo $s_no++; ?></td>
                                                         <td><?php echo $row['title']; ?></td>
                                                         <td><?php echo $row['location']; ?></td>
                                                         <td><?php echo $row['price']; ?></td>
@@ -74,7 +84,7 @@
                                                         <td>
                                                             <a href="view_property.php?id=<?php echo $row['id']; ?>" class="btn btn-info btn-sm">View</a>
                                                             <a href="edit_property.php?id=<?php echo $row['id']; ?>" class="btn btn-warning btn-sm">Edit</a>
-                                                            <a href="delete_property.php?id=<?php echo $row['id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this property?');">Delete</a>
+                                                            <button class="btn btn-danger btn-sm delete-btn" data-id="<?php echo $row['id']; ?>">Delete</button>
                                                         </td>
                                                     </tr>
                                                 <?php endwhile; ?>
@@ -87,6 +97,68 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- JavaScript for Filtering -->
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        const filterButtons = document.querySelectorAll(".filter-btn");
+                        const propertyRows = document.querySelectorAll(".property-row");
+
+                        filterButtons.forEach(button => {
+                            button.addEventListener("click", function() {
+                                const filter = this.getAttribute("data-filter");
+
+                                propertyRows.forEach(row => {
+                                    const type = row.getAttribute("data-type").trim(); // Normalize type
+
+                                    if (filter === "all" || type === filter) {
+                                        row.style.display = "";
+                                    } else {
+                                        row.style.display = "none";
+                                    }
+                                });
+                            });
+                        });
+                    });
+                </script>
+
+
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        document.querySelectorAll(".delete-btn").forEach(button => {
+                            button.addEventListener("click", function() {
+                                let propertyId = this.getAttribute("data-id");
+                                if (confirm("Are you sure you want to delete this property?")) {
+                                    fetch("delete_property.php", {
+                                            method: "POST",
+                                            headers: {
+                                                "Content-Type": "application/x-www-form-urlencoded"
+                                            },
+                                            body: "id=" + propertyId
+                                        })
+                                        .then(response => response.json())
+                                        .then(data => {
+                                            if (data.success) {
+                                                // Remove the row from the table
+                                                let row = document.querySelector(`tr[data-id='${propertyId}']`);
+                                                row.remove();
+
+                                                // Re-adjust serial numbers
+                                                let serialCells = document.querySelectorAll(".serial-no");
+                                                serialCells.forEach((cell, index) => {
+                                                    cell.textContent = index + 1;
+                                                });
+                                            } else {
+                                                alert("Error deleting property.");
+                                            }
+                                        })
+                                        .catch(error => console.error("Error:", error));
+                                }
+                            });
+                        });
+                    });
+                </script>
+
 
             </div>
         </div>

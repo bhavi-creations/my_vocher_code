@@ -29,11 +29,12 @@ include 'header.php';
                 if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     $title = $_POST['title'];
                     $type = $_POST['type'];
-                    $price = $_POST['price'];
+                    $price = (int) $_POST['price']; // Ensure integer
+                    $phone = $_POST['phone'];
                     $location = $_POST['location'];
-                    $size_sqft = $_POST['size_sqft'];
-                    $bedrooms = $_POST['bedrooms'];
-                    $bathrooms = $_POST['bathrooms'];
+                    $size_sqft = (int) $_POST['size_sqft']; // Ensure integer
+                    $bedrooms = (int) $_POST['bedrooms']; // Ensure integer
+                    $bathrooms = (int) $_POST['bathrooms']; // Ensure integer
                     $furnishing_status = $_POST['furnishing_status'];
                     $description = $_POST['description'];
                     $amenities = isset($_POST['amenities']) ? implode(',', $_POST['amenities']) : '';
@@ -80,12 +81,12 @@ include 'header.php';
                     }
                     $multiple_images_str = implode(',', $multiple_images);
 
-                    // ✅ Insert Data into Database
-                    $query = "INSERT INTO properties (title, type, price, location, size_sqft, bedrooms, bathrooms, furnishing_status, amenities, image, images, description) 
-              VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+                    // ✅ Corrected Query & Bind Parameters
+                    $query = "INSERT INTO properties (title, type, price, phone, location, size_sqft, bedrooms, bathrooms, furnishing_status, amenities, image, images, description) 
+              VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
                     $stmt = $conn->prepare($query);
-                    $stmt->bind_param("ssssiiisssss", $title, $type, $price, $location, $size_sqft, $bedrooms, $bathrooms, $furnishing_status, $amenities, $image_name, $multiple_images_str, $description);
+                    $stmt->bind_param("ssissiiisssss", $title, $type, $price, $phone, $location, $size_sqft, $bedrooms, $bathrooms, $furnishing_status, $amenities, $image_name, $multiple_images_str, $description);
 
                     if ($stmt->execute()) {
                         $_SESSION['message'] = "Property added successfully!";
@@ -100,6 +101,7 @@ include 'header.php';
                     }
                 }
                 ?>
+
 
                 <!-- ✅ Success Message Display in HTML -->
                 <?php if (isset($_SESSION['message'])): ?>
@@ -153,6 +155,15 @@ include 'header.php';
                                 <label>Price:</label>
                                 <input type="text" name="price" class="form-control" required>
                             </div>
+
+
+                            <div class="col-md-6 mb-3">
+                                <label>Phone Number</label>
+                                <input type="text" name="phone" class="form-control" required>
+                            </div>
+
+
+
                             <div class="col-md-6 mb-3">
                                 <label>Location:</label>
                                 <input type="text" name="location" class="form-control" required>

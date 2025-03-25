@@ -1,31 +1,46 @@
 <?php
+session_start();
 include '../../db.connection/db_connection.php';
 
-if (isset($_GET['id'])) {
-    $id = $_GET['id'];
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['id'])) {
+    $id = $_POST['id'];
 
     // Get Image Path
-    $query = "SELECT image FROM properties WHERE id = $id";
-    $result = mysqli_query($conn, $query);
-    $property = mysqli_fetch_assoc($result);
+    $query = "SELECT image FROM properties WHERE id = ?";
+    $stmt = $conn->prepare($query);
+    $stmt->bind_param("i", $id);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    $property = $result->fetch_assoc();
 
-    // Delete Image File
-    $imagePath = "../uploads/properties/" . $property['image'];
-    if (file_exists($imagePath)) {
-        unlink($imagePath);
-    }
+    if ($property) {
+        // Delete Image File
+        $imagePath = "../uploads/properties/" . $property['image'];
+        if (!empty($property['image']) && file_exists($imagePath)) {
+            unlink($imagePath);
+        }
 
-    // Delete Property from Database
-    $delete_query = "DELETE FROM properties WHERE id = $id";
-    if (mysqli_query($conn, $delete_query)) {
-        $_SESSION['message'] = "Property deleted successfully!";
-        $_SESSION['msg_type'] = "success";
+        // Delete Property from Database
+        $delete_query = "DELETE FROM properties WHERE id = ?";
+        $stmt = $conn->prepare($delete_query);
+        $stmt->bind_param("i", $id);
+        
+        if ($stmt->execute()) {
+            echo json_encode(["success" => true, "message" => "Property deleted successfully!"]);
+            exit();
+        } else {
+            echo json_encode(["success" => false, "message" => "Failed to delete property!"]);
+            exit();
+        }
     } else {
-        $_SESSION['message'] = "Failed to delete property!";
-        $_SESSION['msg_type'] = "danger";
+        echo json_encode(["success" => false, "message" => "Property not found!"]);
+        exit();
     }
 }
 
-header("Location: properties_list.php");
+echo json_encode(["success" => false, "message" => "Invalid request!"]);
 exit();
 ?>
+
+
+ 

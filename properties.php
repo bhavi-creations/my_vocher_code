@@ -72,14 +72,34 @@
 </script>
 
 
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+
+            <?php include './db.connection/db_connection.php'; ?>
+
+            <!-- Display Success Message -->
+            <?php if (isset($_SESSION['message'])): ?>
+                <div id="alert-box" class="alert alert-<?php echo $_SESSION['msg_type']; ?>">
+                    <?php echo $_SESSION['message']; ?>
+                    <?php unset($_SESSION['message']); ?>
+                </div>
+
+                <script>
+                    setTimeout(function() {
+                        let alertBox = document.getElementById('alert-box');
+                        if (alertBox) {
+                            alertBox.style.display = 'none';
+                        }
+                    }, 3000);
+                </script>
+            <?php endif; ?>
 
 
 
-
-
-
-
-
+        </div>
+    </div>
+</div>
 
 
 
@@ -87,36 +107,54 @@
 
 
 <div class="container text-center">
-    <!-- For larger screens (lg and up) - Show buttons -->
-    <div class="filter_buttons redirect_section mt-5 d-none d-lg-flex flex-wrap justify-content-center">
-        <a href="blogs.php?service= "><button class="redirect_blog_srivice">All</button></a>
-        <a href="blogs.php?service= "><button class="redirect_blog_srivice">House Rent</button></a>
-        <a href="blogs.php?service= "><button class="redirect_blog_srivice">Commercial Rent</button></a>
-        <a href="blogs.php?service= "><button class="redirect_blog_srivice">House Sale</button></a>
-        <a href="blogs.php?service= "><button class="redirect_blog_srivice">Commercial Sale</button></a>
-        <a href="blogs.php?service= "><button class="redirect_blog_srivice">Land Sale</button></a>
-        <a href="blogs.php?service= "><button class="redirect_blog_srivice">Land Lease</button></a>
+
+    <!-- Buttons for Larger Screens -->
+    <div class="col-12  ">
+        <div class="mt-5 text-center">
+            <button class="redirect_blog_srivice filter-btn" data-filter="all">All</button>
+            <button class="redirect_blog_srivice filter-btn" data-filter="For Sale">For Sale</button>
+            <button class="redirect_blog_srivice filter-btn" data-filter="For Rent">For Rent</button>
+            <button class="redirect_blog_srivice filter-btn" data-filter="For Lease">For Lease</button>
+        </div>
     </div>
 
-    <!-- For smaller screens (md and below) - Show dropdown -->
-    <div class="d-lg-none mt-5">
-        <select id="filterDropdown" class="form-select">
-            <option value="blogs.php?service=">All</option>
-            <option value="blogs.php?service= ">House Rent</option>
-            <option value="blogs.php?service= ">Commercial Rent</option>
-            <option value="blogs.php?service= ">House Sale</option>
-            <option value="blogs.php?service= ">Commercial Sale</option>
-            <option value="blogs.php?service= ">Land Sale</option>
-            <option value="blogs.php?service= ">Land Lease</option>
-        </select>
-    </div>
+
+
+
+
+    <script>
+        $(document).ready(function() {
+            function filterProperties(filterValue) {
+                $(".property-item").hide(); // Hide all property items
+
+                if (filterValue === "all") {
+                    $(".property-item").fadeIn(); // Show all properties if "All" is selected
+                } else {
+                    $(".property-item").each(function() {
+                        if ($(this).data("type").trim() === filterValue) {
+                            $(this).fadeIn(); // Show only the matching properties
+                        }
+                    });
+                }
+            }
+
+            // Filter when a button is clicked (for large screens)
+            $(".filter-btn").click(function() {
+                let filterValue = $(this).data("filter");
+                filterProperties(filterValue);
+            });
+
+            // Filter when a dropdown option is selected (for mobile)
+            $(".filter-dropdown").change(function() {
+                let filterValue = $(this).val();
+                filterProperties(filterValue);
+            });
+        });
+    </script>
+
 </div>
 
-<script>
-    document.getElementById('filterDropdown').addEventListener('change', function() {
-        window.location.href = this.value;
-    });
-</script>
+
 
 
 
@@ -134,164 +172,72 @@
                 <div class="row    fadeIn" data-wow-delay="0.3s">
 
 
-
-
-
                     <section class="OfferContainer_exclusive__non wow fadeInUp my-2" data-wow-delay="100ms">
-                        <div class="col-12  card_div px-3">
-                            <div class="row  py-3">
-                                <div class="col-12 col-md-3 job_image_card">
-                                    <img src="assets/img/test/sideimg1.png" class="img-fluid company_logo_size" alt="">
-
-                                </div>
-
-                                <div class="col-12 col-md-9">
-                                    <h4>Commercial Building </h4>
-                                    <p class="property_p_tag"><strong class="property_strong"> Price :</strong> Not Provided </p>
-                                    <p class="property_p_tag"> <strong class="property_strong"> Location : </strong> Suryaraopet, Kkd </p>
-                                    <p class="property_p_tag"> <strong class="property_strong"> Posted On :</strong> 01 jan 2025 </p>
-
-                                    <p class="sale_tag"> For Sale </p>
-
-                                </div>
 
 
+                        <div class="row" id="property-list">
+                            <?php
+                            $query = "SELECT * FROM properties ORDER BY id DESC";
+                            $result = mysqli_query($conn, $query);
+                            while ($row = mysqli_fetch_assoc($result)):
+                                $propertyType = trim($row['type']);
+                            ?>
+                                <div class="col-12 card_div px-3 property-item" data-type="<?php echo $propertyType; ?>">
+                                    <div class="row py-3">
+                                        <div class="col-12 col-md-3 job_image_card">
+                                            <img src="./admin/uploads/properties/<?php echo $row['image']; ?>" class="img-fluid company_logo_size" alt="Property Image">
+                                        </div>
+                                        <div class="col-8 col-md-9">
+                                            <h4><?php echo $row['title']; ?></h4>
+                                            <p class="property_p_tag"><strong class="property_strong">Price:</strong> <?php echo $row['price'] ?: 'Not Provided'; ?></p>
+                                            <p class="property_p_tag"><strong class="property_strong">Location:</strong> <?php echo $row['location']; ?></p>
+                                            <p class="property_p_tag">
+                                                <strong class="property_strong">Posted On:</strong>
+                                                <?php echo isset($row['created_at']) ? date('d M Y', strtotime($row['created_at'])) : 'Not Available'; ?>
+                                            </p>
 
 
-                                <div class="col-12 terms_cond_styles">
-                                    <div class="terms_justify">
+                                            <p class="rent_tag <?php echo strtolower(str_replace(' ', '-', $propertyType)); ?>">
+                                                <?php echo $propertyType; ?>
+                                            </p>
 
-                                        <p>
-                                            <a href="#" class="toggle-terms">View More Details</a>
-                                        </p>
+
+
+                                        </div>
+                                        <div class="col-12 terms_cond_styles">
+                                            <div class="terms_justify">
+                                                <p><a href="#" class="toggle-terms">View More Details</a></p>
+                                            </div>
+                                            <div class="terms-content mb-3" style="display: none;">
+                                                <h4>Addtional Details</h4>
+                                                <p class="property_p_tag"><strong class="property_strong">Phone:</strong> <?php echo $row['phone'] ?: 'Not Available'; ?></p>
+                                                <p class="property_p_tag"><strong class="property_strong">Description:</strong> <?php echo nl2br($row['description']); ?></p>
+                                                <a href="property_details.php?id=<?php echo $row['id']; ?>" class="btn btn-primary">View Full Details</a>
+                                            </div>
+                                        </div>
                                     </div>
-
-                                    <div class="terms-content mb-3" style="display: none;">
-                                        <h4>Ad Details</h4>
-                                        <p class="property_p_tag"><strong class="property_strong"> Contact Person :</strong> Not Provided </p>
-                                        <p class="property_p_tag"><strong class="property_strong"> Description :</strong> Ready To Occupy
-                                            G+3 Floor Building is Available For Rent.
-                                            4 Road Corner Building
-                                            Each Floor With 2500 Square Feet Area.
-                                            Total Ground Floor With Exclusive Parking.
-                                            Floor Wise or Total Building is available
-                                            Lift Facility is available.
-                                            Facing: North West Corner.
-                                            For More Details Contact: 9490188815, 9390219275. (see full description) </p>
-                                        <a href="property_details.php" class=" ">View full Details</a>
-
-                                    </div>
-
                                 </div>
-                            </div>
-
+                            <?php endwhile; ?>
                         </div>
-                    </section>
-
-                    <section class="OfferContainer_exclusive__non wow fadeInUp my-2" data-wow-delay="100ms">
-                        <div class="col-12  card_div px-3">
-                            <div class="row  py-3">
-                                <div class="col-12 col-md-3 job_image_card">
-                                    <img src="assets/img/test/sideimg1.png" class="img-fluid company_logo_size" alt="">
-
-                                </div>
-
-                                <div class="col-8 col-md-9">
-                                    <h4>Commercial Building </h4>
-                                    <p class="property_p_tag"><strong class="property_strong"> Price :</strong> Not Provided </p>
-                                    <p class="property_p_tag"> <strong class="property_strong"> Location : </strong> Suryaraopet, Kkd </p>
-                                    <p class="property_p_tag"> <strong class="property_strong"> Posted On :</strong> 01 jan 2025 </p>
-                                    <p class="rent_tag"> For Rent </p>
 
 
-                                </div>
-
-
-
-
-                                <div class="col-12 terms_cond_styles">
-                                    <div class="terms_justify">
-
-                                        <p>
-                                            <a href="#" class="toggle-terms">View More Details</a>
-                                        </p>
-                                    </div>
-
-                                    <div class="terms-content mb-3" style="display: none;">
-                                        <h4>Ad Details</h4>
-                                        <p class="property_p_tag"><strong class="property_strong"> Contact Person :</strong> Not Provided </p>
-                                        <p class="property_p_tag"><strong class="property_strong"> Description :</strong> Ready To Occupy
-                                            G+3 Floor Building is Available For Rent.
-                                            4 Road Corner Building
-                                            Each Floor With 2500 Square Feet Area.
-                                            Total Ground Floor With Exclusive Parking.
-                                            Floor Wise or Total Building is available
-                                            Lift Facility is available.
-                                            Facing: North West Corner.
-                                            For More Details Contact: 9490188815, 9390219275. (see full description) </p>
-                                        <a href="property_details.php" class=" ">View full Details</a>
-
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </div>
                     </section>
 
 
-                    <section class="OfferContainer_exclusive__non wow fadeInUp my-2" data-wow-delay="100ms">
-                        <div class="col-12  card_div px-3">
-                            <div class="row  py-3">
-                                <div class="col-12 col-md-3 job_image_card">
-                                    <img src="assets/img/test/sideimg1.png" class="img-fluid company_logo_size" alt="">
-
-                                </div>
-
-                                <div class="col-8 col-md-9">
-                                    <h4>Commercial Building </h4>
-                                    <p class="property_p_tag"><strong class="property_strong"> Price :</strong> Not Provided </p>
-                                    <p class="property_p_tag"> <strong class="property_strong"> Location : </strong> Suryaraopet, Kkd </p>
-                                    <p class="property_p_tag"> <strong class="property_strong"> Posted On :</strong> 01 jan 2025 </p>
-                                    <p class="lease_tag"> For Lease </p>
-
-
-                                </div>
-
-
-
-
-                                <div class="col-12 terms_cond_styles">
-                                    <div class="terms_justify">
-
-                                        <p>
-                                            <a href="#" class="toggle-terms">View More Details</a>
-                                        </p>
-                                    </div>
-
-                                    <div class="terms-content mb-3" style="display: none;">
-                                        <h4>Ad Details</h4>
-                                        <p class="property_p_tag"><strong class="property_strong"> Contact Person :</strong> Not Provided </p>
-                                        <p class="property_p_tag"><strong class="property_strong"> Description :</strong> Ready To Occupy
-                                            G+3 Floor Building is Available For Rent.
-                                            4 Road Corner Building
-                                            Each Floor With 2500 Square Feet Area.
-                                            Total Ground Floor With Exclusive Parking.
-                                            Floor Wise or Total Building is available
-                                            Lift Facility is available.
-                                            Facing: North West Corner.
-                                            For More Details Contact: 9490188815, 9390219275. (see full description) </p>
-                                        <a href="property_details.php" class=" ">View full Details</a>
-
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </div>
-                    </section>
-
-
+                    <script>
+                        document.querySelectorAll('.filter-btn').forEach(button => {
+                            button.addEventListener('click', function() {
+                                let filter = this.getAttribute('data-filter');
+                                document.querySelectorAll('.property-item').forEach(item => {
+                                    if (filter === 'all' || item.getAttribute('data-type') === filter) {
+                                        item.style.display = 'block';
+                                    } else {
+                                        item.style.display = 'none';
+                                    }
+                                });
+                            });
+                        });
+                    </script>
 
 
                     <script>
@@ -364,11 +310,6 @@
 
 
 
-
-
-
-
-
 <script>
     let currentSlide = 0;
 
@@ -415,19 +356,6 @@
         document.getElementById("lightbox").style.display = "none";
     }
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
