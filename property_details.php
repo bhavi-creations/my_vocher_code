@@ -18,21 +18,16 @@ if (isset($_GET['id'])) {
         exit;
     }
 
-    // Fetch multiple images for the property
-    $image_query = "SELECT images FROM properties WHERE id = ?";
-    $image_stmt = $conn->prepare($image_query);
-    $image_stmt->bind_param("i", $property_id);
-    $image_stmt->execute();
-    $image_result = $image_stmt->get_result();
-    $images = explode(',', $property['images']);
-
-    while ($row = $image_result->fetch_assoc()) {
-        $images[] = $row['images'];
+    // Fetch images correctly
+    $images = array(); // Initialize empty array to store images
+    if (!empty($property['images'])) {
+        $images = array_filter(explode(',', $property['images'])); // Convert to array and remove empty values
     }
 } else {
     echo "<h2 class='text-center'>Invalid Property</h2>";
     exit;
 }
+
 ?>
 
 <section>
@@ -46,11 +41,17 @@ if (isset($_GET['id'])) {
                         <div class="col-12 card_div px-3">
                             <div class="row py-3">
                                 <h4><?php echo htmlspecialchars($property['type']); ?></h4>
-                                <p><strong>Price:</strong> <?php echo htmlspecialchars($property['price']); ?></p>
-                                <p><strong>Location:</strong> <?php echo htmlspecialchars($property['location']); ?></p>
-                                <p><strong>Posted On:</strong> <?php echo htmlspecialchars($property['created_at']); ?></p>
-                                <p><strong>Contact Person:</strong> <?php echo htmlspecialchars($property['phone']); ?></p>
-                                <p><strong>Description:</strong> <?php echo nl2br(htmlspecialchars($property['description'])); ?></p>
+                                <p class="property_p_tag"><strong class="property_strong">Price:</strong> <?php echo htmlspecialchars($property['price']); ?></p>
+                                <p class="property_p_tag"><strong class="property_strong">Location:</strong> <?php echo htmlspecialchars($property['location']); ?></p>
+                                <p class="property_p_tag"><strong class="property_strong">Size (Sqft):</strong> <?php echo htmlspecialchars($property['size_sqft']); ?></p>
+                                <p class="property_p_tag"><strong class="property_strong">Bed Rooms:</strong> <?php echo htmlspecialchars($property['bedrooms']); ?></p>
+                                <p class="property_p_tag"><strong class="property_strong">Bath Rooms:</strong> <?php echo htmlspecialchars($property['bathrooms']); ?></p>
+                                <p class="property_p_tag"><strong class="property_strong">Furnishing Status :</strong> <?php echo htmlspecialchars($property['furnishing_status']); ?></p>
+                                <p class="property_p_tag"><strong class="property_strong">Amenities :</strong> <?php echo htmlspecialchars($property['amenities']); ?> Available</p>
+
+                                <p class="property_p_tag"><strong class="property_strong">Posted On:</strong> <?php echo htmlspecialchars($property['created_at']); ?></p>
+                                <p class="property_p_tag"><strong class="property_strong">Contact Person:</strong> <?php echo htmlspecialchars($property['phone']); ?></p>
+                                <p class="property_p_tag"><strong class="property_strong">Description:</strong> <?php echo nl2br(htmlspecialchars($property['description'])); ?></p>
                             </div>
                         </div>
                     </section>
@@ -92,6 +93,7 @@ if (isset($_GET['id'])) {
                                 }
                             }
                             ?>
+
                         </div>
                     </div>
                 </div>
