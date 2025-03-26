@@ -72,7 +72,7 @@
                         let errorMessage = document.getElementById("errorMessage");
                         if (successMessage) successMessage.style.display = "none";
                         if (errorMessage) errorMessage.style.display = "none";
-                    }, 4000);
+                    }, 2000);
                 </script>
 
 

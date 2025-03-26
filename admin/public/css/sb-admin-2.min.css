@@ -12608,3 +12608,22 @@ footer.sticky-footer .copyright {
 body.sidebar-toggled footer.sticky-footer {
     width: 100%
 }
+
+
+
+
+
+
+
+
+
+.filter-btn {
+    border-radius: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.filter-btn:hover {
+    transform: scale(1.05);
+}

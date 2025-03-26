@@ -12,7 +12,7 @@
             <div class="container-fluid">
                 <div class="d-sm-flex align-items-center justify-content-between mb-4">
                     <h1 class="h3 mb-0 text-gray-800">Available Travels</h1>
-                    <a href="add_travel.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+                    <a href="add_travel.php" class="btn btn-sm btn-primary shadow-sm">
                         <i class="fa-solid fa-plus"></i> Add Travel
                     </a>
                 </div>
@@ -30,21 +30,37 @@
                                 </div>
 
                                 <script>
-                                    setTimeout(function() {
-                                        let alertBox = document.getElementById('alert-box');
-                                        if (alertBox) {
-                                            alertBox.style.display = 'none';
-                                        }
+                                    setTimeout(() => {
+                                        document.getElementById('alert-box')?.remove();
                                     }, 3000);
                                 </script>
                             <?php endif; ?>
 
                             <!-- Filter Buttons -->
                             <div class="mb-3">
-                                <button class="btn btn-primary filter-btn" data-filter="all">All</button>
-                                <button class="btn btn-success filter-btn" data-filter="rental">Rental</button>
-                                <button class="btn btn-warning filter-btn" data-filter="chauffeur">With Driver</button>
-                                <button class="btn btn-info filter-btn" data-filter="vacation">Vacation</button>
+                                <button class="btn btn-primary filter-btn m-1" data-filter="all">All</button>
+
+                                <?php
+                                // Define colors for different types
+                                $buttonColors = [
+                                    "rental" => "btn-success",
+                                    "chauffeur" => "btn-warning",
+                                    "vacation" => "btn-info"
+                                ];
+
+                                $typeQuery = "SELECT DISTINCT type FROM travels";
+                                $typeResult = mysqli_query($conn, $typeQuery);
+
+                                while ($typeRow = mysqli_fetch_assoc($typeResult)) {
+                                    $type = ucfirst($typeRow['type']);
+                                    $lowerType = strtolower($type);
+
+                                    // Assign color or default to gray
+                                    $btnClass = $buttonColors[$lowerType] ?? "btn-secondary";
+
+                                    echo "<button class='btn $btnClass filter-btn m-1' data-filter='$lowerType'>$type</button>";
+                                }
+                                ?>
                             </div>
 
                             <!-- Travel Table -->
@@ -73,9 +89,9 @@
                                                 $result = mysqli_query($conn, $query);
                                                 $s_no = 1;
                                                 while ($row = mysqli_fetch_assoc($result)):
-                                                    $travelType = trim($row['type']); // Normalize type
+                                                    $travelType = strtolower(trim($row['type']));
                                                 ?>
-                                                    <tr class="travel-row" data-type="<?php echo $travelType; ?>">
+                                                    <tr class="travel-row" data-type="<?php echo $travelType; ?>" data-id="<?php echo $row['id']; ?>">
                                                         <td class="serial-no"><?php echo $s_no++; ?></td>
                                                         <td><?php echo $row['model']; ?></td>
                                                         <td><?php echo $row['seating_capacity']; ?></td>
@@ -105,28 +121,19 @@
                 <!-- JavaScript for Filtering -->
                 <script>
                     document.addEventListener("DOMContentLoaded", function() {
-                        const filterButtons = document.querySelectorAll(".filter-btn");
-                        const travelRows = document.querySelectorAll(".travel-row");
-
-                        filterButtons.forEach(button => {
+                        document.querySelectorAll(".filter-btn").forEach(button => {
                             button.addEventListener("click", function() {
-                                const filter = this.getAttribute("data-filter");
-
-                                travelRows.forEach(row => {
-                                    const type = row.getAttribute("data-type").trim(); // Normalize type
-
-                                    if (filter === "all" || type === filter) {
-                                        row.style.display = "";
-                                    } else {
-                                        row.style.display = "none";
-                                    }
+                                let filter = this.getAttribute("data-filter").toLowerCase();
+                                document.querySelectorAll(".travel-row").forEach(row => {
+                                    let type = row.getAttribute("data-type").toLowerCase();
+                                    row.style.display = (filter === "all" || type === filter) ? "" : "none";
                                 });
                             });
                         });
                     });
                 </script>
 
-
+                <!-- JavaScript for Deletion -->
                 <script>
                     document.addEventListener("DOMContentLoaded", function() {
                         document.querySelectorAll(".delete-btn").forEach(button => {
@@ -143,17 +150,24 @@
                                         .then(response => response.json())
                                         .then(data => {
                                             if (data.success) {
-                                                // Remove the row from the table
-                                                let row = document.querySelector(`tr[data-id='${travelId}']`);
+                                                // Remove the deleted row
+                                                let row = document.querySelector(`button[data-id='${travelId}']`).closest("tr");
                                                 row.remove();
 
                                                 // Re-adjust serial numbers
-                                                let serialCells = document.querySelectorAll(".serial-no");
-                                                serialCells.forEach((cell, index) => {
+                                                document.querySelectorAll(".serial-no").forEach((cell, index) => {
                                                     cell.textContent = index + 1;
                                                 });
+
+                                                // Remove filter button if the type is completely deleted
+                                                if (data.deletedType) {
+                                                    let filterButton = document.querySelector(`.filter-btn[data-filter='${data.deletedType}']`);
+                                                    if (filterButton) {
+                                                        filterButton.remove();
+                                                    }
+                                                }
                                             } else {
-                                                alert("Error deleting travel.");
+                                                alert(data.message);
                                             }
                                         })
                                         .catch(error => console.error("Error:", error));
