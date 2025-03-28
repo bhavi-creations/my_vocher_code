@@ -1,50 +1,55 @@
-<?php include 'navbar.php';  ?>
+<?php include 'navbar.php'; ?>
+
+
+<h1 class="text-center my-4">Let's Travel</h1>
 
 
 
+<div class="container">
+    <div class="row justify-content-center">
+        <?php include './db.connection/db_connection.php'; ?>
+
+        <?php
 
 
+        $typeQuery = "SELECT DISTINCT type FROM travels";
+        $typeResult = mysqli_query($conn, $typeQuery);
+        while ($typeRow = mysqli_fetch_assoc($typeResult)) {
+            $type = ucfirst($typeRow['type']);
+            $lowerType = strtolower($type);
+            $imgSrc = $typeImages[$lowerType] ?? "assets/img/self_images/rental.png"; // Default image
+            $btnClass = $buttonColors[$lowerType] ?? "btn-secondary";
 
-<h1 class="text-center my-4">Lets Travel</h1>
-
- 
-<section>
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-4">
-                <a href="rental.php">
-                    
-                    <div class="text-center">
-                        <img src="assets/img/self_images/rental.png" alt="">
-                        <h3>Rentals</h3>
+            echo '
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card travel_card shadow border-0">
+                        <img src="' . $imgSrc . '" class="card_img_top_travel" alt="' . $type . '">
+                        <div class="card-body card_img_top_travel_body text-center">
+                        </div>
+                        <div class="card-footer text-center bg-white border-0">
+                            <button class="btn ' . $btnClass . ' filter-btn filter-btn-travel" data-filter="' . $lowerType . '">Explore ' . $type . '</button>
+                        </div>
                     </div>
-                </a>
-            </div>
-            <div class="col-12 col-md-4">
-                <a href="booked.php">
-
-                    <div class="text-center">
-                        <img src="assets/img/self_images/booked.png" alt="">
-                        <h3>Booked</h3>
-                    </div>
-                </a>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="text-center">
-                    <img src="assets/img/self_images/vaccetion.png" alt="">
-                    <h3>Vacation</h3>
-                    <p>( Comming Soon )</p>
-                </div>
-            </div>
-        </div>
+                </div>';
+        }
+        ?>
     </div>
-</section>
+</div>
 
-
-
+<!-- JavaScript for Redirecting on Filter Click -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        document.querySelectorAll(".filter-btn").forEach(button => {
+            button.addEventListener("click", function() {
+                let filter = this.getAttribute("data-filter").toLowerCase();
+                window.location.href = "filtered_travel.php?filter=" + filter;
+            });
+        });
+    });
+</script>
 
 
 <?php include 'chat_bot.php';  ?>
 
 
-<?php include 'footer.php';  ?>
+<?php include 'footer.php'; ?>

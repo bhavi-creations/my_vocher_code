@@ -70,7 +70,7 @@
                                         <td><?php echo $travel['created_at']; ?></td>
                                     </tr>
                                 </table>
-                                <a href="travels.php" class="btn btn-secondary">Back to List</a>
+                                <a href="travel.php" class="btn btn-secondary">Back to List</a>
                             </div>
 
                         </div>

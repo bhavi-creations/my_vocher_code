@@ -12,12 +12,8 @@
             <div class="container-fluid">
                 <div class="d-sm-flex align-items-center justify-content-between mb-4">
                     <h1 class="h3 mb-0 text-gray-800">Theaters</h1>
-                    <a href="add_theater.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
-                        <i class="fa fa-plus"></i> Add Theater
-                    </a>
-                
-                    <a href="show_movies.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
-                    <i class="fa-regular fa-eye"></i> Show Movies
+                    <a href="movies.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+                    <i class="fa-regular fa-eye"></i> Show Theaters List
                     </a>
                 </div>
 
@@ -40,20 +36,15 @@
                                             <h5 class="card-title"><?php echo $row['name']; ?></h5>
                                             <p class="card-text"><strong>Location:</strong> <?php echo $row['location']; ?></p>
 
-                                            <!-- View Button -->
-                                            <a href="view_theater.php?theater_id=<?php echo $row['id']; ?>" class="btn btn-success btn-sm">
-                                                <i class="fa fa-eye"></i> View
+                                            <!-- Manage Screens Button -->
+                                            <a href="add_screens.php?theater_id=<?php echo $row['id']; ?>" class="btn btn-info btn-sm">
+                                                <i class="fa fa-tv"></i> Add Screens
                                             </a>
 
-                                            <!-- Edit Button -->
-                                            <a href="edit_theater.php?theater_id=<?php echo $row['id']; ?>" class="btn btn-warning btn-sm">
-                                                <i class="fa fa-edit"></i> Edit
+                                            <!-- Show Screens Button -->
+                                            <a href="show_screens.php?theater_id=<?php echo $row['id']; ?>" class="btn btn-success btn-sm">
+                                                <i class="fa fa-eye"></i> Show Screens
                                             </a>
-
-                                            <!-- Delete Button -->
-                                            <button class="btn btn-danger btn-sm delete-btn" data-id="<?php echo $row['id']; ?>">
-                                                <i class="fa fa-trash"></i> Delete
-                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -74,18 +65,3 @@
 </div>
 
 <?php include 'end.php'; ?>
-
-<!-- Delete Confirmation Script -->
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll(".delete-btn").forEach(button => {
-        button.addEventListener("click", function () {
-            let theaterId = this.getAttribute("data-id");
-
-            if (confirm("Are you sure you want to delete this theater?")) {
-                window.location.href = "delete_theater.php?theater_id=" + theaterId;
-            }
-        });
-    });
-});
-</script>

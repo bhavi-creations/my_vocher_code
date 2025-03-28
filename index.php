@@ -12,21 +12,56 @@
  </section>
 
 
+ <?php
+    include './db.connection/db_connection.php'; // Ensure the database connection is included
 
- <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-     <div class="carousel-inner">
-         <div class="carousel-item active">
-             <img src="assets/img/self_images/3uFKWSiuGKES9MyfJCPsHT-1280-80.jpg.webp" class="  img-fluid  d-block w-100" alt="...">
-         </div>
-         <div class="carousel-item">
-             <img src="assets/img/self_images/3uFKWSiuGKES9MyfJCPsHT-1280-80.jpg.webp" class="img-fluid d-block w-100" alt="...">
-         </div>
-         <div class="carousel-item">
-             <img src="assets/img/self_images/3uFKWSiuGKES9MyfJCPsHT-1280-80.jpg.webp" class="img-fluid  d-block w-100" alt="...">
+    // Fetch only upper images
+    $upperQuery = "SELECT image FROM home_ads WHERE type = 'upper'";
+    $upperResult = mysqli_query($conn, $upperQuery);
+
+    $upperImages = [];
+    while ($row = mysqli_fetch_assoc($upperResult)) {
+        $upperImages[] = $row['image'];
+    }
+
+    // Fetch only lower images
+    $lowerQuery = "SELECT image FROM home_ads WHERE type = 'lower'";
+    $lowerResult = mysqli_query($conn, $lowerQuery);
+
+    $lowerImages = [];
+    while ($row = mysqli_fetch_assoc($lowerResult)) {
+        $lowerImages[] = $row['image'];
+    }
+
+    // Close connection (optional)
+    mysqli_close($conn);
+    ?>
+
+
+
+
+
+ <section style="padding: 0px !important;">
+     <div class="px-0">
+         <div class="row justify-content-center mx-0">
+             <div class="col-12 px-0">
+                 <?php if (!empty($upperImages)): ?>
+                     <div id="upperCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                         <div class="carousel-inner">
+                             <?php foreach ($upperImages as $index => $image): ?>
+                                 <div class="carousel-item <?= ($index === 0) ? 'active' : ''; ?>">
+                                 <img src="./admin/uploads/home_ads/<?= htmlspecialchars($image) ?>"  class="d-block w-100 img-fluid" style="object-fit: cover; max-height: 500px;" alt="Upper Image">
+                                 </div>
+                             <?php endforeach; ?>
+                         </div>
+                     </div>
+                 <?php else: ?>
+                     <p class="text-center text-muted">No upper images available.</p>
+                 <?php endif; ?>
+             </div>
          </div>
      </div>
- </div>
-
+ </section>
 
 
  <section class="team-section-three   space-md-bottom">
@@ -873,20 +908,31 @@
  </section>
 
 
-
- <div id="carouselExampleSlidesOnly" class="carousel slide px-5" data-bs-ride="carousel">
-     <div class="carousel-inner">
-         <div class="carousel-item active">
-             <img src="assets/img/self_images/3uFKWSiuGKES9MyfJCPsHT-1280-80.jpg.webp" class="  img-fluid  d-block w-100" alt="...">
-         </div>
-         <div class="carousel-item">
-             <img src="assets/img/self_images/3uFKWSiuGKES9MyfJCPsHT-1280-80.jpg.webp" class="img-fluid d-block w-100" alt="...">
-         </div>
-         <div class="carousel-item">
-             <img src="assets/img/self_images/3uFKWSiuGKES9MyfJCPsHT-1280-80.jpg.webp" class="img-fluid  d-block w-100" alt="...">
+ <section class="mb-5">
+     <div class="px-0">
+         <div class="row justify-content-center mx-0">
+             <div class="col-12 px-0">
+                 <?php if (!empty($lowerImages)): ?>
+                     <div id="lowerCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                         <div class="carousel-inner">
+                             <?php foreach ($lowerImages as $index => $image): ?>
+                                 <div class="carousel-item <?= ($index === 0) ? 'active' : ''; ?>">
+                                 <img src="./admin/uploads/home_ads/<?= htmlspecialchars($image) ?>"
+                             
+                                         class="d-block w-100 img-fluid"
+                                         style="object-fit: cover; max-height: 500px;"
+                                         alt="Lower Image">
+                                 </div>
+                             <?php endforeach; ?>
+                         </div>
+                     </div>
+                 <?php else: ?>
+                     <p class="text-center text-muted">No lower images available.</p>
+                 <?php endif; ?>
+             </div>
          </div>
      </div>
- </div>
+ </section>
 
 
  <script>
