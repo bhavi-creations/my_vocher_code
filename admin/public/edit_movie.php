@@ -57,12 +57,25 @@ if (isset($_GET['id'])) {
                 movie_name = ?, duration = ?, start_time = ?, genre = ?, language = ?, rating = ?, 
                 about_movie = ?, director = ?, producer = ?, musician = ?, hero = ?, heroin = ?, images = ? 
                 WHERE id = ?";
-            
+
             $stmt = mysqli_prepare($conn, $updateQuery);
             mysqli_stmt_bind_param(
-                $stmt, "sssssssssssssi",
-                $movie_name, $duration, $start_time, $genre, $language, $rating,
-                $about_movie, $director, $producer, $musician, $hero, $heroin, $image_names, $id
+                $stmt,
+                "sssssssssssssi",
+                $movie_name,
+                $duration,
+                $start_time,
+                $genre,
+                $language,
+                $rating,
+                $about_movie,
+                $director,
+                $producer,
+                $musician,
+                $hero,
+                $heroin,
+                $image_names,
+                $id
             );
 
             if (mysqli_stmt_execute($stmt)) {
@@ -72,7 +85,7 @@ if (isset($_GET['id'])) {
                 echo "<div class='alert alert-danger'>Error updating record: " . mysqli_error($conn) . "</div>";
             }
         }
-        ?>
+?>
 
         <?php include 'header.php'; ?>
         <div id="wrapper">
@@ -109,6 +122,33 @@ if (isset($_GET['id'])) {
                                     <input type="text" name="rating" class="form-control" value="<?= $row['rating'] ?>" required>
                                 </div>
                                 <div class="form-group col-md-4 mb-3">
+                                    <label>Director</label>
+                                    <input type="text" name="director" class="form-control" value="<?= $row['director'] ?>" required>
+                                </div>
+                                <div class="form-group col-md-4 mb-3">
+                                    <label>Producer</label>
+                                    <input type="text" name="producer" class="form-control" value="<?= $row['producer'] ?>" required>
+                                </div>
+                                <div class="form-group col-md-4 mb-3">
+                                    <label>Musician</label>
+                                    <input type="text" name="musician" class="form-control" value="<?= $row['musician'] ?>" required>
+                                </div>
+                                <div class="form-group col-md-4 mb-3">
+                                    <label>Hero</label>
+                                    <input type="text" name="hero" class="form-control" value="<?= $row['hero'] ?>" required>
+                                </div>
+                                <div class="form-group col-md-4 mb-3">
+                                    <label>Heroin</label>
+                                    <input type="text" name="heroin" class="form-control" value="<?= $row['heroin'] ?>" required>
+                                </div>
+                                <div class="form-group col-md-4 mb-3">
+                                    <label>About Movie</label>
+                                    <input type="text" name="about_movie" class="form-control" value="<?= $row['about_movie'] ?>" required>
+                                </div>
+                                 
+
+
+                                <div class="form-group col-md-4 mb-3">
                                     <label>Existing Images</label>
                                     <div>
                                         <?php
@@ -127,6 +167,8 @@ if (isset($_GET['id'])) {
                                 </div>
                             </div>
                             <button type="submit" name="update" class="btn btn-success">Update</button>
+                        <a href="show_movies.php" class="btn btn-primary">Cancle</a>
+
                         </form>
                     </div>
                 </div>
