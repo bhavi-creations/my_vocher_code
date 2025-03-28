@@ -62,8 +62,8 @@
         <div class="container">
 
             <div class="text-center   ">
-                <h1>Welcome to The Sweets & Chocolate</h1>
-                <h5>Deliciously Crafted Treats for Every Occasion</h5>
+                <h1>Welcome to The Royal Touch</h1>
+                <h5>Relax, Rejuvenate, Glow – Ultimate Salon Experience</h5>
             </div>
             <div class="row">
                 <div class="col-lg-9 col-12">
@@ -77,13 +77,13 @@
                             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img src="assets\img\test/4.png"class="  img-fluid  d-block w-100" alt="...">
+                                        <img src="assets/img/test/21.png" class="  img-fluid  d-block w-100" alt="...">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="assets\img\test/5.png"class="img-fluid d-block w-100" alt="...">
+                                        <img src="assets/img/test/22.png" class="img-fluid d-block w-100" alt="...">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="assets\img\test/6.png" class="img-fluid  d-block w-100" alt="...">
+                                        <img src="assets/img/test/23.png" class="img-fluid  d-block w-100" alt="...">
                                     </div>
                                 </div>
                             </div>
@@ -92,8 +92,8 @@
                         </div>
                         <div class="col-md-4 col-12 p-3">
                             <div class="product-content">
-                                <h3>Sweets & Cholocate</h3>
-                                <p class="product-title h5 mt-1">Indulge in Irresistible Sweets and Chocolate</p>
+                                <h3>The Royal Touch</h3>
+                                <p class="product-title h5 mt-1">Luxury Salon & Spa for Ultimate Relaxation</p>
 
                                 <div class="rating-wrap">
                                     <div class="star-rating " role="img" aria-label="Rated 5.00 out of 5"><span
@@ -108,15 +108,9 @@
                     <div class="row my-5 p-3">
                         <div class="col-md-8 col-12 ">
                             <h6>
-                            Sweets and chocolates have been cherished across cultures for centuries, bringing joy and comfort to people of all ages. From rich, velvety chocolates to mouthwatering traditional sweets, these treats are perfect for celebrations, gifts, or simply satisfying your sweet cravings.
-
+                            Royal Touch Salon & Spa offers a luxurious escape where beauty meets elegance. Our expert stylists and therapists provide top-tier haircuts, styling, skincare, and rejuvenating spa treatments. With a commitment to excellence, we use premium products and the latest techniques to ensure you look and feel your best. Experience a royal touch of pampering in a relaxing and sophisticated ambiance. Whether it's a refreshing facial, a soothing massage, or a stunning makeover, we redefine beauty with elegance and care. Indulge in the ultimate self-care experience at Royal Touch Salon & Spa.
 
                             </h6>
-
-                            <p>
-                                <strong>The Magic of Chocolate</strong> <br>
-                                Chocolate, made from cocoa beans, is loved worldwide for its irresistible taste and texture. Whether it's creamy milk chocolate, intense dark chocolate, or silky white chocolate, every bite is a moment of pure bliss. It’s not just about taste—chocolate is also known to boost mood and provide antioxidants that benefit health.
-                            </p>
                         </div>
 
 
@@ -134,44 +128,37 @@
                             <h3 class="text-center">Menu</h3>
                             <div class="menu-container">
                                 <div class="menu-item">
-                                    <span class="food-name">Dark Chocolate Truffle</span>
-                                    <span class="price">$5</span>
+                                    <span class="food-name">Haircut & Styling</span>
+                                    <span class="price"> $30 - $80</span>
                                 </div>
                                 <div class="menu-item">
-                                    <span class="food-name">
-                                    Belgian Pralines</span>
-                                    <span class="price">$12 </span>
+                                    <span class="food-name">Hair Coloring & Highlights</span>
+                                    <span class="price">$60 - $200</span>
                                 </div>
                                 <div class="menu-item">
-                                    <span class="food-name">
-                                    Milk Chocolate Fudge</span>
-                                    <span class="price"> $8 </span>
+                                    <span class="food-name">Keratin Treatment</span>
+                                    <span class="price"> $100 - $300</span>
                                 </div>
                                 <div class="menu-item">
-                                    <span class="food-name">
-                                    White Chocolate Almond Bark</span>
-                                    <span class="price">$10 
-                                   </span>
+                                    <span class="food-name">Hair Spa</span>
+                                    <span class="price">$40 - $100</span>
                                 </div>
                                 <div class="menu-item">
-                                    <span class="food-name"> Traditional Gulab Jamun</span>
-                                    <span class="price">$6 </span>
+                                    <span class="food-name">Scalp Treatment</span>
+                                    <span class="price"> $50 - $120</span>
                                 </div>
 
                                     <div class="menu-item">
-                                    <span class="food-name">
-                                    Premium Baklava</span>
-                                    <span class="price">$15 </span>
+                                    <span class="food-name">Basic Facial</span>
+                                    <span class="price">$40 - $80</span>
                                 </div>
                                 <div class="menu-item">
-                                    <span class="food-name">
-                                    Caramel Sea Salt Chocolate</span>
-                                    <span class="price">$9</span>
+                                    <span class="food-name">Anti-Aging Facial </span>
+                                    <span class="price">$80 - $150</span>
                                 </div>
                                 <div class="menu-item">
-                                    <span class="food-name"> 
-                                    Classic Indian Ladoo</span>
-                                    <span class="price">$7</span>
+                                    <span class="food-name">Hydrating Facial</span>
+                                    <span class="price">$60 - $120</span>
                                 </div>
                             </div>
 
@@ -188,13 +175,13 @@
                                     <div class="review-header">
                                         <img src="assets/img/test/woman.png" alt="User" class="profile-img">
                                         <div class="">
-                                            <p><strong>Sophia .M</strong></p>
+                                            <p><strong>Emma R</strong></p>
                                             <p class="stars">⭐⭐⭐⭐⭐</p>
                                         </div>
                                     </div>
                                     <p class="review-text">
-                                        "The dark chocolate truffle was pure heaven!
-                                        <span class="hidden-text"> Smooth, rich, and just the right amount of sweetness. Will definitely order again!"</span>
+                                        "I had an amazing experience at [Salon Name]! From the moment I walked in, the ambiance was so relaxing, and the staff was incredibly friendly.
+                                        <span class="hidden-text"> My facial and massage were absolutely rejuvenating. I left feeling refreshed and glowing. Highly recommended!"</span>
                                     </p>
                                     <p class="view-more" onclick="toggleText(this)">Read More</p>
                                     <p class="view-images" onclick="toggleImages(this)">View Images</p>
@@ -210,13 +197,13 @@
                                     <div class="review-header">
                                         <img src="assets/img/test/boy11.png" alt="User" class="profile-img">
                                         <div class="">
-                                            <p><strong> David .R</strong></p>
+                                            <p><strong>David M</strong></p>
                                             <p class="stars">⭐⭐⭐⭐</p>
                                         </div>
                                     </div>
                                     <p class="review-text">
-                                        "I bought a box of Belgian pralines for a friend, and they loved it. .
-                                        <span class="hidden-text">The packaging was beautiful, and the taste was even better!"</span>
+                                    This is my go-to place for hair and spa treatments! The hairstylist did a fantastic job with my haircut and color.
+                                        <span class="hidden-text"> The spa section is equally amazing – the aromatherapy massage melted all my stress away. Worth every penny!</span>
                                     </p>
                                     <p class="view-more" onclick="toggleText(this)">Read More</p>
                                     <p class="view-images" onclick="toggleImages(this)">View Images</p>
@@ -231,13 +218,13 @@
                                     <div class="review-header">
                                         <img src="assets/img/test/woman.png" alt="User" class="profile-img">
                                         <div class="">
-                                            <p><strong> Emily K.</strong></p>
+                                            <p><strong> Sophia L.</strong></p>
                                             <p class="stars">⭐⭐⭐⭐⭐</p>
                                         </div>
                                     </div>
                                     <p class="review-text">
-                                        "The caramel sea salt chocolate bar was divine!
-                                        <span class="hidden-text"> The mix of sweetness and saltiness made it super addictive. Highly recommend!"</span>
+                                        ""I love how clean and well-maintained this salon is! The staff is professional, and they take the time to understand your needs.
+                                        <span class="hidden-text"> The manicure & pedicure session was incredibly relaxing. Definitely coming back for more self-care sessions!"</span>
                                     </p>
                                     <p class="view-more" onclick="toggleText(this)">Read More</p>
                                     <p class="view-images" onclick="toggleImages(this)">View Images</p>
@@ -249,7 +236,7 @@
                                     </div>
                                 </div>
 
-                                <!-- <div class="review">
+                                <div class="review">
                                     <div class="review-header">
                                         <img src="assets/img/test/boy11.png" alt="User" class="profile-img">
                                         <div class="">
@@ -267,10 +254,10 @@
                                         <img src="assets/img/review3.jpg" alt="Review Image"
                                             onclick="openLightbox(this)">
                                     </div>
-                                </div> -->
+                                </div>
 
 
-                                <!-- <div class="review">
+                                <div class="review">
                                     <div class="review-header">
                                         <img src="assets/img/test/woman.png" alt="User" class="profile-img">
                                         <div class="">
@@ -290,7 +277,7 @@
                                         <img src="assets/img/test/2.png" alt="Review Image"
                                             onclick="openLightbox(this)">
                                     </div>
-                                </div>   -->
+                                </div>  
                             </div>
 
                             <!-- Lightbox for Image Popup -->

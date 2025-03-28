@@ -18,7 +18,7 @@
     <div class="container">
 
         <div class="text-center   mb-5">
-            <h1> Devi Screen 1</h1>
+            <h1> screen name</h1>
 
         </div>
         <div class="row">
@@ -122,146 +122,7 @@
 
                     </div>
                 </div>
-                <div class="row p-3">
-                    <div class="col-md-8 col-12">
-                        <div class="review-container">
-                            <h2>Customer Reviews</h2>
-
-                            <div class="review">
-                                <div class="review-header">
-                                    <img src="assets/img/test/woman.png" alt="User" class="profile-img">
-                                    <div class="">
-                                        <p><strong>Emma R</strong></p>
-                                        <p class="stars">⭐⭐⭐⭐⭐</p>
-                                    </div>
-                                </div>
-                                <p class="review-text">
-                                    "The ambiance was elegant, and the food was absolutely delicious! Every dish was beautifully presented, and the flavors were exceptional.
-                                    <span class="hidden-text">The staff was courteous and attentive, making the experience even more enjoyable. Highly recommended!"</span>
-                                </p>
-                                <p class="view-more" onclick="toggleText(this)">Read More</p>
-                                <p class="view-images" onclick="toggleImages(this)">View Images</p>
-                                <div class="review-images">
-                                    <img src="assets/img/test/1.png" alt="Review Image"
-                                        onclick="openLightbox(this)">
-                                    <img src="assets/img/test/2.png" alt="Review Image"
-                                        onclick="openLightbox(this)">
-                                </div>
-                            </div>
-
-                            <div class="review">
-                                <div class="review-header">
-                                    <img src="assets/img/test/boy11.png" alt="User" class="profile-img">
-                                    <div class="">
-                                        <p><strong>David M</strong></p>
-                                        <p class="stars">⭐⭐⭐⭐</p>
-                                    </div>
-                                </div>
-                                <p class="review-text">
-                                    "A top-notch restaurant with a warm and inviting atmosphere. The wine selection was impressive, and the.
-                                    <span class="hidden-text">chef’s special was divine. Will definitely be coming back!"</span>
-                                </p>
-                                <p class="view-more" onclick="toggleText(this)">Read More</p>
-                                <p class="view-images" onclick="toggleImages(this)">View Images</p>
-                                <div class="review-images">
-                                    <img src="assets/img/review3.jpg" alt="Review Image"
-                                        onclick="openLightbox(this)">
-                                </div>
-                            </div>
-
-
-                            <div class="review">
-                                <div class="review-header">
-                                    <img src="assets/img/test/woman.png" alt="User" class="profile-img">
-                                    <div class="">
-                                        <p><strong> Sophia L.</strong></p>
-                                        <p class="stars">⭐⭐⭐⭐⭐</p>
-                                    </div>
-                                </div>
-                                <p class="review-text">
-                                    "The food was amazing, especially the wood-fired pizza and seafood platter! However, the service was a
-                                    <span class="hidden-text">little slow during peak hours. Overall, a great place for a relaxed meal."</span>
-                                </p>
-                                <p class="view-more" onclick="toggleText(this)">Read More</p>
-                                <p class="view-images" onclick="toggleImages(this)">View Images</p>
-                                <div class="review-images">
-                                    <img src="assets/img/test/1.png" alt="Review Image"
-                                        onclick="openLightbox(this)">
-                                    <img src="assets/img/test/2.png" alt="Review Image"
-                                        onclick="openLightbox(this)">
-                                </div>
-                            </div>
-
-                            <div class="review">
-                                <div class="review-header">
-                                    <img src="assets/img/test/boy11.png" alt="User" class="profile-img">
-                                    <div class="">
-                                        <p><strong>David M</strong></p>
-                                        <p class="stars">⭐⭐⭐⭐</p>
-                                    </div>
-                                </div>
-                                <p class="review-text">
-                                    "A top-notch restaurant with a warm and inviting atmosphere. The wine selection was impressive, and the.
-                                    <span class="hidden-text">chef’s special was divine. Will definitely be coming back!"</span>
-                                </p>
-                                <p class="view-more" onclick="toggleText(this)">Read More</p>
-                                <p class="view-images" onclick="toggleImages(this)">View Images</p>
-                                <div class="review-images">
-                                    <img src="assets/img/review3.jpg" alt="Review Image"
-                                        onclick="openLightbox(this)">
-                                </div>
-                            </div>
-
-
-                            <div class="review">
-                                <div class="review-header">
-                                    <img src="assets/img/test/woman.png" alt="User" class="profile-img">
-                                    <div class="">
-                                        <p><strong> Sophia L.</strong></p>
-                                        <p class="stars">⭐⭐⭐⭐⭐</p>
-                                    </div>
-                                </div>
-                                <p class="review-text">
-                                    "The food was amazing, especially the wood-fired pizza and seafood platter! However, the service was a
-                                    <span class="hidden-text">little slow during peak hours. Overall, a great place for a relaxed meal."</span>
-                                </p>
-                                <p class="view-more" onclick="toggleText(this)">Read More</p>
-                                <p class="view-images" onclick="toggleImages(this)">View Images</p>
-                                <div class="review-images">
-                                    <img src="assets/img/test/1.png" alt="Review Image"
-                                        onclick="openLightbox(this)">
-                                    <img src="assets/img/test/2.png" alt="Review Image"
-                                        onclick="openLightbox(this)">
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Lightbox for Image Popup -->
-                        <div class="lightbox" id="lightbox">
-                            <span class="close" onclick="closeLightbox()">&times;</span>
-                            <img id="lightbox-img" src="">
-                        </div>
-
-
-                    </div>
-                    <div class="col-md-4 col-12">
-                        <div class="review-form">
-                            <h2>Submit Your Review</h2>
-                            <input type="text" id="name" placeholder="Your Name" required>
-                            <select id="rating">
-                                <option value="⭐">⭐</option>
-                                <option value="⭐⭐">⭐⭐</option>
-                                <option value="⭐⭐⭐">⭐⭐⭐</option>
-                                <option value="⭐⭐⭐⭐">⭐⭐⭐⭐</option>
-                                <option value="⭐⭐⭐⭐⭐" selected>⭐⭐⭐⭐⭐</option>
-                            </select>
-                            <textarea id="comment" rows="3" placeholder="Write a comment..." required></textarea>
-                            <input type="file" id="imageUpload" accept="image/*">
-                            <button onclick="submitReview()">Submit Review</button>
-                        </div>
-                    </div>
-
-                </div>
+                
             </div>
             <div class="col-lg-3  col-12 text_side_div d-none d-lg-block">
 

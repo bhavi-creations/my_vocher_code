@@ -86,20 +86,22 @@
                         <ul class="sub-menu ">
                             <li class="movies_bg"><a class=" " href="#"> Movies</a>
                                 <ul>
-                                    <li><a class="sub_mini_serices" href="devi.php"> Devi Multiplex </a></li>
-                                    <li><a class="sub_mini_serices" href="anand.php"> Anand Complex </a></li>
-                                    <li><a class="sub_mini_serices" href="sripadma.php">Sri Priya Padma Priya </a></li>
-                                    <li><a class="sub_mini_serices" href="cc.php"> C&C </a></li>
-                                    <li><a class="sub_mini_serices" href="geeth_sangeeth.php"> Geeth Sangeeth </a></li>
-                                    <li><a class="sub_mini_serices" href="tirumala.php"> Thirumala </a></li>
-                                    <li><a class="sub_mini_serices" href="inox.php">Inox </a></li>
-                                    <li><a class="sub_mini_serices" href="surya.php"> Surya </a></li>
-                                    <li><a class="sub_mini_serices" href="satyagowri.php"> Satya Gowri </a></li>
-                                    <li><a class="sub_mini_serices" href="mayuri.php"> Mayuri </a></li>
-                                    <li><a class="view_all_sub_mini_serices" href="list_layout.php"> View All Movies Deals </a></li>
+                                    <?php
+                                    include './db.connection/db_connection.php'; // Database connection
 
+                                    $query = "SELECT id, name FROM theaters";
+                                    $result = mysqli_query($conn, $query);
+
+                                    while ($row = mysqli_fetch_assoc($result)) {
+                                        echo '<li><a class="sub_mini_serices" href="screens.php?theater_id=' . $row['id'] . '">' . htmlspecialchars($row['name']) . '</a></li>';
+                                    }
+                                    ?>
+                                    <li><a class="view_all_sub_mini_serices" href="theaters.php"> View All Movies Deals </a></li>
                                 </ul>
                             </li>
+
+
+
                             <li class="resturent_bg"><a class=" " href="#"> Resturents</a>
                                 <ul>
                                     <li><a class="sub_mini_serices" href="business_layout.php"> Food Train </a></li>
@@ -228,56 +230,9 @@
     </div>
 
 
-    <!--==============================
-        Header Area
-    ==============================-->
     <header class="header-wrapper header-layout1">
-        <!-- Header Top -->
-        <!-- <div class="header-top bg-title py-2 d-none d-md-block">
-            <div class="container container-style1 py-1">
-                <div class="row justify-content-center justify-content-xl-between">
-                    <div class="col-auto">
-                        <ul class="header-top-info list-unstyled m-0">
-                            <li><i class="far fa-envelope"></i><a href="mailto:support@hospital.com" class="text-reset">support@hospital.com</a></li>
-                            <li><i class="far fa-map-marker-alt"></i>36D Street Brooklyn, New York</li>
-                            <li><i class="far fa-clock"></i>Mon - Fri: 8:00 am - 7:00 pm</li>
-                        </ul>
-                    </div>
-                    <div class="col-auto d-none d-xl-block">
-                        <ul class="head-top-links text-end">
-                            <li>
-                                <ul class="header-social">
-                                    <li>
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                
-                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="fal fa-globe"></i> English
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
-                                    <li><a href="#">German</a></li>
-                                    <li><a href="#">French</a></li>
-                                    <li><a href="#">Italian</a></li>
-                                    <li><a href="#">Latvian</a></li>
-                                    <li><a href="#">Spanish</a></li>
-                                    <li><a href="#">Greek</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- Sticky Active -->
+
+
         <div class="sticky-wrap">
             <div class="sticky-active">
                 <!-- Header Main -->
@@ -301,25 +256,32 @@
 
                                         <li class="menu-item-has-children mega-menu-wrap">
                                             <a href="services.php"><span class="has-new-label">Services<span class="new-label">New</span></span></a>
-                                            <ul class="mega-menu">
+                                            <ul class="mega-menu dropdown-menu-mega">
                                                 <div class="mega-menu-row row  ">
                                                     <div class="col-3 movies_bg my-2">
-                                                        <li><a class="sub_heading" href="#"> Movies</a>
-                                                            <ul>
-                                                                <li><a class="sub_mini_serices" href="devi.php"> Devi Multiplex </a></li>
-                                                                <li><a class="sub_mini_serices" href="anand.php"> Anand Complex </a></li>
-                                                                <li><a class="sub_mini_serices" href="sripadma.php">Sri Priya Padma Priya </a></li>
-                                                                <li><a class="sub_mini_serices" href="cc.php"> C&C </a></li>
-                                                                <li><a class="sub_mini_serices" href="geeth_sangeeth.php"> Geeth Sangeeth </a></li>
-                                                                <li><a class="sub_mini_serices" href="tirumala.php">Thirumala </a></li>
-                                                                <li><a class="sub_mini_serices" href="inox.php">Inox </a></li>
-                                                                <li><a class="sub_mini_serices" href="surya.php"> Surya </a></li>
-                                                                <li><a class="sub_mini_serices" href="satyagowri.php"> Satya Gowri </a></li>
-                                                                <li><a class="sub_mini_serices" href="mayuri.php"> Mayuri </a></li>
-                                                                <li><a class="view_all_sub_mini_serices" href="list_layout.php"> View All Movies Deals </a></li>
 
+
+                                                        <li><a class="sub_heading" href="#"> Movies</a>
+                                                            <ul  >
+                                                           
+                                                                <?php
+                                                                include './db.connection/db_connection.php';
+
+                                                                // Fetch all theaters from the database
+                                                                $theater_query = "SELECT id, name FROM theaters";
+                                                                $theater_result = mysqli_query($conn, $theater_query);
+
+                                                                while ($row = mysqli_fetch_assoc($theater_result)) {
+                                                                    echo '<li><a class="sub_mini_serices" href="screens.php?theater_id=' . $row['id'] . '">' . htmlspecialchars($row['name']) . '</a></li>';
+                                                                }
+                                                                ?>
+                                                                <li><a class="view_all_sub_mini_serices" href="theaters.php"> View All Movies Deals </a></li>
                                                             </ul>
                                                         </li>
+
+
+
+
 
                                                     </div>
                                                     <div class="col-3 resturent_bg  my-2 ">
@@ -361,7 +323,8 @@
                                                     </div>
                                                     <div class="col-3 gifts_bg my-2">
                                                         <li><a class="sub_heading" href="business_layout.php"> Gifts & Jewellery</a>
-                                                            <ul>
+                                                        <ul   >
+
                                                                 <li><a class="sub_mini_serices" href="business_layout.php"> Sweets & Chocolates </a></li>
                                                                 <li><a class="sub_mini_serices" href="business_layout.php"> Gifts & Collectables </a></li>
                                                                 <li><a class="sub_mini_serices" href="business_layout.php"> Flowers </a></li>
